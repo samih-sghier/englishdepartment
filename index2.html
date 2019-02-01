@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Davenport Writers</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">Davenport Writers Website</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 300px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }  
+     #home {
+        height: 250px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+        #space{
+        height: 50px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+    </style> 
+
+    
+    <!-- Alternative Google Map API: <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g2cZHoqGyqpxv-f9zMBxNTs3Gu6h45bn" width="640" height="480"></iframe>-->
+    <!--Google Map API -->
+  
+        <script>
+   
+    function initMap() {
+      
+            var markers = new Array; 
+     var i;   
+  var locations = [
+       {lat: 41.554104, lng: -90.603997},
+     {lat: 41.4917853, lng: -90.5352616}
+    ];  
+      var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: {lat: 41.554104, lng: -90.603997}
+  });
+        
+
+
+        
+  
+
+
+         var marker1 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[0]),
+         map: map,
+         title: 'maps'
+      });
+    
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker1.getPosition());
+          }, 3000);
+        });
+    
+        marker1.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker1.getPosition());  
+        var tag= "#";   
+        alert(marker1.getPosition());
+        var divElement= marker1.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+     //   alert(divElement);
+
+      var page = tag+divElement; // Page cible
+        //alert(page);
+        
+       
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+         
+
+      
+    
+            
+    var marker2 = new google.maps.Marker({
+    position: new google.maps.LatLng(locations[1]),
+    map: map,
+    title: 'maps'
+  });
+    ;
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker2.getPosition());
+          }, 3000);
+        });
+    
+        marker2.addListener('click', function() {
+        map.setZoom(11);
+        map.setCenter(marker2.getPosition());  
+        var tag= "#";   
+        alert(marker2.getPosition());
+        var divElement= marker2.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+
+      var page = tag+divElement; // Page cible
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;     
+        });
+        
+                            
+            
+   
+}
+
+           
+    </script>
+    
+     <div id="map" class="js-scrollTo navbar-brand" href="#map"></div>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw3_P1gUhLBKZc60R4Y9DAsA9ct0EtTQQ&callback=initMap">
+    </script>
+   
+      <section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <h1>TEST</h1>
+                    <h4>DAVENPORT</h4>
+                    <a href="#blog" class="smoothScroll btn btn-default">Take a tour!</a>
+               </div>
+          </div>
+     </div>
+</section>
+    
+
+<!-- Blog Section -->
+
+<section id="blog">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12" id="415541049060399699999999" class="415541049060399699999999" href="#415541049060399699999999">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                  <!-- image-->
+                                   <img src="images/" class="img-responsive" alt="Blog Image">
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3><a href="single-post.html">We Help You Create Perfect Modern Design</a></h3>
+                         </div>
+                         <div class="blog-post-format">
+                                <!--image-->
+                              <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle"> Jen Lopez</a></span>
+                              <span><i class="fa fa-date"></i> July 22, 2017</span>
+                              <span><a href="#"><i class="fa fa-comment-o"></i> 35 Comments</a></span>
+                         </div>
+                         <div class="blog-post-des">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
+                         </div>
+                    </div>
+
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                   <img src="images/blog-image2.jpg" class="img-responsive" alt="Blog Image">
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3><a href="single-post.html">In pretium tellus et ante accumsan</a></h3>
+                         </div>
+                         <div class="blog-post-format">
+                              <span><a href="#"><img src="images/author-image2.jpg" class="img-responsive img-circle"> Leo Dennis</a></span>
+                              <span><i class="fa fa-date"></i> June 10, 2017</span>
+                              <span><a href="#"><i class="fa fa-comment-o"></i> 48 Comments</a></span>
+                         </div>
+                         <div class="blog-post-des">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
+                         </div>
+                    </div>
+
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-video">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pgmx7z49OEk" allowfullscreen></iframe>
+                              </div>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3><a href="single-post.html">Nam interdum maximus dolor faucibus</a></h3>
+                         </div>
+                         <div class="blog-post-format">
+                              <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle"> Jen Lopez</a></span>
+                              <span><i class="fa fa-date"></i> May 30, 2017</span>
+                              <span><a href="#"><i class="fa fa-comment-o"></i> 63 Comments</a></span>
+                         </div>
+                         <div class="blog-post-des">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
+                         </div>
+                    </div>
+
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                   <img src="images/blog-image3.jpg" class="img-responsive" alt="Blog Image">
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3><a href="single-post.html">The ingredients that make a great burger</a></h3>
+                         </div>
+                         <div class="blog-post-format">
+                              <span><a href="#"><img src="images/author-image2.jpg" class="img-responsive img-circle"> Leo Dennis</a></span>
+                              <span><i class="fa fa-date"></i> April 18, 2017</span>
+                              <span><a href="#"><i class="fa fa-comment-o"></i> 124 Comments</a></span>
+                         </div>
+                         <div class="blog-post-des">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
+                         </div>
+                    </div>
+
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                   <img src="images/blog-image4.jpg" class="img-responsive" alt="Blog Image">
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              <h3><a href="single-post.html">Vestibulum vel mauris nec ex tempus</a></h3>
+                         </div>
+                         <div class="blog-post-format">
+                              <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle"> Jen Lopez</a></span>
+                              <span><i class="fa fa-date"></i> March 12, 2017</span>
+                              <span><a href="#"><i class="fa fa-comment-o"></i> 256 Comments</a></span>
+                         </div>
+                         <div class="blog-post-des">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Neuron Studio</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2017 Your Company - Design: Tooplate</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p><i class="fa fa-globe"></i> 512 Delicious Street, San Francisco, CA 10880</p>
+                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
+                    <p><i class="fa fa-save"></i> info@company.com</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

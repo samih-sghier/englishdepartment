@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script type="text/javascript" src="custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery-1.11.3.js"></script>
+    <script src="bootstrap.js"></script>
+    <title>Home Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-1.11.3.js"></script>
+    <script src="bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+</head>
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 300px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }  
+
+    </style> 
+<body>
+        
+      <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Davenport Writers Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+               </ul>
+
+      </div>
+        </nav>
+      <!-- Header - set the background image for the header in the line below -->
+    <header class="py-5 bg-image-full" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/A_blank_black_picture.jpg');">
+      <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+   MAP API TESTING
+    
+    <!-- Alternative Google Map API: <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g2cZHoqGyqpxv-f9zMBxNTs3Gu6h45bn" width="640" height="480"></iframe>-->
+    <!--Google Map API -->
+        <script>
+   
+    function initMap() {
+      
+            var markers = new Array; 
+     var i;   
+  var locations = [
+       {lat: 41.554104, lng: -90.603997},
+     {lat: 41.4917853, lng: -90.5352616}
+    ];  
+      var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: {lat: 41.554104, lng: -90.603997}
+  });
+        
+
+
+        
+  
+
+
+         var marker1 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[0]),
+         map: map,
+         title: 'maps'
+      });
+    
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker1.getPosition());
+          }, 3000);
+        });
+    
+        marker1.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker1.getPosition());  
+        var tag= "#";   
+        alert(marker1.getPosition());
+        var divElement= marker1.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+     //   alert(divElement);
+
+      var page = tag+divElement; // Page cible
+        //alert(page);
+        
+       
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+         
+
+      
+    
+            
+    var marker2 = new google.maps.Marker({
+    position: new google.maps.LatLng(locations[1]),
+    map: map,
+    title: 'maps'
+  });
+    ;
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker2.getPosition());
+          }, 3000);
+        });
+    
+        marker2.addListener('click', function() {
+        map.setZoom(11);
+        map.setCenter(marker2.getPosition());  
+        var tag= "#";   
+        alert(marker2.getPosition());
+        var divElement= marker2.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+
+      var page = tag+divElement; // Page cible
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;     
+        });
+        
+                            
+            
+   
+}
+
+           
+    </script>
+     <div id="map" class="js-scrollTo navbar-brand" href="#map"></div>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw3_P1gUhLBKZc60R4Y9DAsA9ct0EtTQQ&callback=initMap">
+    </script>
+    
+    
+    
+    
+    
+    <!-- Content section -->
+    
+    <section class="py-5">
+     
+      <div class="container">
+        <h1>Section Heading</h1>
+        <p class="lead">Location ?.</p>
+        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
+      </div>
+    </section>
+     <section class="py-5">
+     <section class="py-5">
+    <div id="415541049060399699999999" class="415541049060399699999999" href="#415541049060399699999999" >
+        <div class="container">
+        <h1>TARGET 1- marker one: (41.554104, -90.60399699999999)</h1>
+        <p><a class="js-scrollTo" href="#415541049060399699999999" id="en_bas"></a></p>
+        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+        </div>
+        </div>
+        </section>
+     
+      <div class="container">
+        <h1>Section Heading</h1>
+        <p class="lead">Location ?.</p>
+        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
+      </div>
+    </section>
+     <section class="py-5">
+     
+      <div class="container">
+        <h1>Section Heading</h1>
+        <p class="lead">Location ?.</p>
+        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
+      </div>
+    </section>
+     <section class="py-5">
+     
+      <div id="4149178539053526160000001" class="container">
+        <h1>TARGET 2- marker two: (41.4917853, -90.53526160000001)</h1>
+        <p class="lead">TEST</p>
+        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
+      </div>
+    </section>
+ 
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+
+    <html>
+        <body>
+             <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw3_P1gUhLBKZc60R4Y9DAsA9ct0EtTQQ&callback=initMap">
+    </script>
+    
+        <script>
+function initMap() {
+  var locations = [
+       {lat: 41.554104, lng: -90.603997},
+     {lat: 41.4917853, lng: -90.5352616}
+    ];  
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: {lat: 41.554104, lng: -90.603997}
+  });
+      
+    for( i=0;i<2;i++){
+        
+    
+ // var myLatLng = locations[i];    
+
+   var marker1 = new google.maps.Marker({
+    position: new google.maps.LatLng(locations[i]),
+    map: map,
+    title: 'maps'
+  });
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+         window.setTimeout(function() {
+         map.panTo(marker.getPosition());
+          }, 3000);
+        });
+    
+          marker.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker.getPosition());  
+        });
+        
+        
+        
+       
+        
+        
+    $(document).ready(function() {
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+        var tag= "#";   
+        var divElement= markers[i].getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+     //   alert(divElement);
+
+      var page = tag+divElement; // Page cible
+        //alert(page);
+        
+       
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });  
+  
+      }
+      
+      
+      
+      
+
+   
+}
+
+           
+    </script>
+</body>
+</html>
