@@ -1,88 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <script type="text/javascript" src="custom.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/jquery.parallax.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
-      <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="jquery-1.11.3.js"></script>
-    <script src="bootstrap.js"></script>
-    <title>Home Page</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="jquery-1.11.3.js"></script>
-    <script src="bootstrap.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  
-    <!-- Custom styles for this template -->
-    <link href="css/full-width-pics.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+<title>Davenport Writers</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
 </head>
-<style>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">Davenport Writers Website</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Authors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+    <style>
        /* Set the size of the div element that contains the map */
       #map {
         height: 300px;  /* The height is 300 pixels */
         width: 100%;  /* The width is the width of the web page */
        }  
+     #home {
+        height: 250px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+     #space{
+        height: 50px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
 
     </style> 
-<body>
-        
-      <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Davenport Writers Website</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-       
-        <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-               </ul>
 
-      </div>
-        </nav>
-      <!-- Header - set the background image for the header in the line below -->
-    <header class="py-5 bg-image-full" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1e/A_blank_black_picture.jpg');">
-      <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
-    </header>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
-   MAP API TESTING
     
     <!-- Alternative Google Map API: <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g2cZHoqGyqpxv-f9zMBxNTs3Gu6h45bn" width="640" height="480"></iframe>-->
     <!--Google Map API -->
+  
         <script>
    
     function initMap() {
@@ -90,8 +89,10 @@
             var markers = new Array; 
      var i;   
   var locations = [
-       {lat: 41.554104, lng: -90.603997},
-     {lat: 41.4917853, lng: -90.5352616}
+      
+       {lat: 41.4643379, lng: -90.5750538},
+     {lat: 41.524648, lng:  -90.572625},
+      {lat: 41.524789, lng:  -90.572685}
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
@@ -122,7 +123,7 @@
           map.setZoom(11);
           map.setCenter(marker1.getPosition());  
         var tag= "#";   
-        alert(marker1.getPosition());
+       // alert(marker1.getPosition());
         var divElement= marker1.getPosition()+'';      
         divElement = divElement.replace('.','');
         divElement = divElement.replace(',','');
@@ -144,9 +145,6 @@
            
         });
         
-         
-
-      
     
             
     var marker2 = new google.maps.Marker({
@@ -167,7 +165,7 @@
         map.setZoom(11);
         map.setCenter(marker2.getPosition());  
         var tag= "#";   
-        alert(marker2.getPosition());
+      // alert(marker2.getPosition());
         var divElement= marker2.getPosition()+'';      
         divElement = divElement.replace('.','');
         divElement = divElement.replace(',','');
@@ -182,68 +180,256 @@
       var speed = 2500; // Durée de l'animation (en ms)
       $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
       return false;     
-        });
+        });    
+
         
-                            
-            
-   
+        
+        
+        
 }
 
            
     </script>
+    
      <div id="map" class="js-scrollTo navbar-brand" href="#map"></div>
  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw3_P1gUhLBKZc60R4Y9DAsA9ct0EtTQQ&callback=initMap">
     </script>
+     <br>
+     <br>
+     <section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <h1>DAVENPORT</h1>
+                    <h4>WRITERS</h4>
+                    <a href="#blog" class="smoothScroll btn btn-default">Take a tour!</a>
+               </div>
+          </div>
+     </div>
+     </section>
     
+
+<!-- Blog Section -->
+    <style>
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
     
-    
-    
-    
-    <!-- Content section -->
-    
-    <section class="py-5">
-     
-      <div class="container">
-        <h1>Section Heading</h1>
-        <p class="lead">Location ?.</p>
-        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
-      </div>
-    </section>
-     <section class="py-5">
-     <section class="py-5">
-    <div id="415541049060399699999999" class="415541049060399699999999" href="#415541049060399699999999" >
-        <div class="container">
-        <h1>TARGET 1- marker one: (41.554104, -90.60399699999999)</h1>
-        <p><a class="js-scrollTo" href="#415541049060399699999999" id="en_bas"></a></p>
-        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-        </div>
-        </div>
-        </section>
-     
-      <div class="container">
-        <h1>Section Heading</h1>
-        <p class="lead">Location ?.</p>
-        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
-      </div>
-    </section>
-     <section class="py-5">
-     
-      <div class="container">
-        <h1>Section Heading</h1>
-        <p class="lead">Location ?.</p>
-        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
-      </div>
-    </section>
-     <section class="py-5">
-     
-      <div id="4149178539053526160000001" class="container">
-        <h1>TARGET 2- marker two: (41.4917853, -90.53526160000001)</h1>
-        <p class="lead">TEST</p>
-        <p>Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text text Some text textLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker. .</p>
-      </div>
-    </section>
- 
+    </style>
+            <!--Black Hawk Watch Tower Section-->
+<section id="blog">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-offset-1 col-md-10 col-sm-12" id="4146433799057505379999998" class="4146433799057505379999998" href="#4146433799057505379999998">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                  <!-- image-->
+                                  
+                                   <img src="images/watchtower1.jpg" class="center" alt="Blog Image">
+                                 <cite class="center" style="color: black">Hauberg, John H. Black Hawk State Park, Watch Tower. 1915. Augustana College, Rock Island, IL.Upper Mississippi Valley Digital Image Archive. Web. 4 Feb. 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                                <!--image-->
+                                  
+                                <br>
+                              <!--<span><i class="fa"></i> 2nd St Davenport, Iowa </span>
+                             <br>
+                              <span><a href="#"><i class="fa"></i> Svendsen, Marlys. A Davenport Pictorial History. G. Bradley Publishing, 1985.</a></span>
+                                  <br>
+                            <span><a href="#"> Thanet, Octave. “Mother Emeritus”. Stories of a Western Town. New York. Charles Scribner’s Sons, 1904. p. 135-136. </a></span>-->
+
+                         
+                         <div class="blog-post-des">
+                             <h3><a href="single-post.html" style="color: black" >Blackhawk’s Watch Tower Park:</a></h3>
+                              <p>“Two leave the park and the crowds--The stars shine out,  A river runs at their feet, behind them, a leafy copse, Away on the other shore, the fields of grain Lie sleeping peacefully in the starlight. Tonight the world is theirs, a legacy From those who lived familiar friends with river, field and forest--- Their forebears Through the night, the same earth-magic moves them Which swayed those ancient ones, long dead-- And these, too, lean and drink, Drink deeply from the river, the flowing river of life.” </p>
+                              <a href="single-post.html" class="btn btn-default">“Seiffert, Marjorie Allen. “The Picnic.” A Woman of Thirty and Poems of Elijah Hay. Alfred A Knopf, 1919. p. 61.””</a>
+                         </div>
+                    </div>
+                        </div>
+                        
+                    </div>
+               </div>
+        
+         <!--Bawden brothers studio-->
+              <div class="col-md-offset-1 col-md-10 col-sm-12" id="415246489057262500000002"  href="#415246489057262500000002">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                  <!-- image-->
+                                   <img src="images/putnam.png" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Bawden Brothers Studio. Perry Street Looking North From Between Second and Third Streets. Ca. 1887. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Archive. Web. 20 January 2019. </cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                         <div class="blog-post-des">
+                             <h3><a href="single-post.html" style="color: black" >View of Davenport Street Featuring Steeple and early Arc Lighting</a></h3>
+                              <p>“My father once drew my attention to the steeple lights that were still in use in Davenport. These were tall metal frames like those of windmills, on which were hung a number of arc lights. The light was diffused over a neighborhood like pale moonlight. They were found impractical. Arc lights were then hung over the intersections of the streets, and every morning a man cleaned dead insects out of the bowl and replaced the carbon sticks. Outside the business district he simply threw the used carbons into the street, where wagons ground them into the dirt”.</p>
+                              <a href="single-post.html" class="btn btn-default">Hansen, Harry. A Davenport Boyhood. State Historical Society of Iowa, 1956, p. 166.</a>
+                         </div>
+                    </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <!--JOHN BLACK HAWK-->
+         
+         
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41524648905720002"  href="#4152464800000002">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                  <!-- image-->
+                                   <img src="images/sauk.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Hauberg, John H. Black Hawk’s great grandson, Jesse KakaQue. Ca. 23 June 1916. Augustana College Special Collections, Rock Island, IL. Upper Mississippi Valley Digital Archive. Web. 21 Jan 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                         <div class="blog-post-des">
+                             <h3><a href="single-post.html" style="color: black" >Black Hawk’s Great Grandson Overlooking Sauk Territory </a></h3>
+                              <p>“Our village was situated on the north side of the Rock river, at the foot of its raids and on the point of land between Rock river and the Mississippi. In its front, a prairie extended to the bank of the Mississippi; and in our rear, a continued bluff, gently ascending from the prairie. On the side of this bluff we had our corn-fields, extending about two miles up, running parallel with the Mississippi; where we joined those of the Foxes, whose village was on the bank of the Mississippi, opposite the lower end of Rock Island, and three miles distant from ours. We had about eight hundred acres in cultivation, including what we had on the islands of Rock River. The land around our village, uncultivated, was covered with blue-grass, which made excellent pasture for our horses. Several fine springs broke out of the bluff, near by, from which we were supplied with good water. The rapids of the Rock river furnished us with an abundance of excellent fish, and the land, being good, never failed to produce good crops of corn, beans, pumpkins, and squashes. We always had plenty—our children never cried with hunger, nor our people were never in want. Here our village had stood for more than a hundred years, during all which time we were the undisputed possessors of the valley of the Mississippi, from the Ouisonsin to the Portage des Sioux, near the mouth of the Missouri, being about seven hundred miles in length.”</p>
+                              <a href="single-post.html" class="btn btn-default">Black Hawk.  Life of Black Hawk, or Ma-Ka-Tai-Me-She-Kia-Kiak. 1882. Penguin Books, 2008, pp. 45-46.</a>
+                         </div>
+                    </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Augustana College</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2019 English Department</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p><i class="fa fa-globe"></i> 639 38th ST Rock Island, IL 61201</p>
+                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
+                    <p><i class="fa fa-save"></i> englishdepartment@augustana.edu</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
-
