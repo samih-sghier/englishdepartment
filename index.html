@@ -86,48 +86,78 @@ http://www.tooplate.com/view/2085-neuron
    
     function initMap() {
       
-            var markers = [3];
+            var markers = [];
      var i;   
   var locations = [
       
       {lat: 41.4643379, lng: -90.5750538},
-      {lat: 41.524648, lng:  -90.572625},
+      {lat: 41.524648, lng:  -90.572625},    
+      {lat: 41.449064, lng:  -90.524890},
       {lat: 41.906850, lng:  -90.6432327},
+      {lat: 41.425940, lng:  -90.582560},
+       
 
      
 
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
+    zoom: 8,
     center: {lat: 41.554104, lng: -90.603997}
   });
              
   
-        for(i=0;i<3;i++){
+      
          
          var marker1 = new google.maps.Marker({
-         position: new google.maps.LatLng(locations[i]),
+         position: new google.maps.LatLng(locations[0]),
          map: map,
          title: 'maps'
       });
+   
+         var marker2 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[1]),
+         map: map,
+         title: 'maps'
+      });
+        //John Hawk
+         var marker3 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[2]),
+         map: map,
+         title: 'maps'
+      });
+        //Gazette
+         var marker4 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[3]),
+         map: map,
+         title: 'maps'
+      });
+         // African American Church
+         var marker5 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[4]),
+         map: map,
+         title: 'maps'
+      });
+
+
+
             
                
+ 
         
-          var markerG=   markers[i];
         map.addListener('center_changed', function() {
           // 3 seconds after the center of the map has changed, pan back to the
           // marker.
           window.setTimeout(function() {
-            map.panTo(markerG.getPosition());
+            map.panTo(marker1.getPosition());
           }, 3000);
         });
     
         marker1.addListener('click', function() {
           map.setZoom(11);
-          map.setCenter(markerG.getPosition());  
+          map.setCenter(marker1.getPosition());  
         var tag= "#";   
        // alert(marker1.getPosition());
-        var divElement= markerG.getPosition()+'';      
+        var divElement= marker1.getPosition()+'';      
         divElement = divElement.replace('.','');
         divElement = divElement.replace(',','');
         divElement = divElement.replace('-','');
@@ -136,7 +166,7 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
 
-alert(divElement);
+
       var page = tag+divElement; // Page cible
      
       var speed = 2500; // Durée de l'animation (en ms)
@@ -144,8 +174,172 @@ alert(divElement);
       return false;
            
         });
-       markers.push(marker1);    
-    }
+        
+        
+        /********************************/
+     
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker2.getPosition());
+          }, 3000);
+        });
+    
+        marker2.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker2.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker2.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+     // alert(divElement);
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker3.getPosition());
+          }, 3000);
+        });
+    
+        marker3.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker3.getPosition());  
+        var tag= "#";   
+  
+        var divElement= marker3.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+         /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker3.getPosition());
+          }, 3000);
+        });
+    
+        marker3.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker3.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker3.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+              /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker4.getPosition());
+          }, 3000);
+        });
+    
+        marker4.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker4.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker4.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+              /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker5.getPosition());
+          }, 3000);
+        });
+    
+        marker5.addListener('click', function() {
+          map.setZoom(11);
+          map.setCenter(marker5.getPosition());  
+        var tag= "#";   
+        var divElement= marker5.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+        
+          
+
+    
 
         
     
@@ -278,7 +472,7 @@ alert(divElement);
          <!--JOHN BLACK HAWK-->
          
          
-            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41906850906432327"  href="#41906850906432327">
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="414490649052489000000003"  href="#414490649052489000000003">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
                                 <div class="blog-post-thumb">
@@ -324,7 +518,7 @@ alert(divElement);
          
 
 
-            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41906850906432327"  href="#41906850906432327">
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4190685906432327"  href="#41906850906432327">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
                                 <div class="blog-post-thumb">
@@ -347,6 +541,42 @@ alert(divElement);
                              <h3><a href="single-post.html" style="color: black" >Gazette Printing Press</a></h3>
                               <p>"The press held my fascinated attention, no less than its big brother of 25 units a day. It was a flat bed machine, printing from type, and it ground out papers methodically and slowly."</p>
                               <a href="single-post.html" class="btn btn-default">Hanson, Harry. Palimpsest: Vol. XXXVII No. 4, April 1956; A Davenport Boyhood. XXXVII, State Historical Society of Iowa, 1956, p. 219.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+                <!--African American Church-->
+         
+
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4142594090582560"  href="#4142594090582560">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/African%20American%20Church%20Image.png" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Svendsen, Marlys A., John Pfiffner, and Martha H. Bowers. Davenport, Where the Mississippi Runs West: A Survey of Davenport History & Architecture. Davenport, IA: City of Davenport, 1982, p. 1.11.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: black" >African American Church</a></h3>
+                              <p>“We had some quaint cullud gents in the old days, sport—happy-go-lucky boys, who didn’t worry so long as they got a chance occasionally to iron out the wrinkles with pohkchops and gravy, or yallerlegs and crushed spuds….The Reverend Emmanuel Franklin was tall, stately, and dignified. He preached salvation and sang in the choir on Sundays in the Afro-American Methodist Church at Fourth and Gaines, slippin’ the brethren the correct dope for travelin’ the straight and narrow path. Reverend Emmanuel never passed the collection plate, as he did chambermaid service on week-days in a Commerical alley livery stable, curryin’ hosses, washin’ buggies, oilin’ harness, and other chores.”</p>
+                              <a href="single-post.html" class="btn btn-default">Purcell, William L. Them Was the Good Old Days, in Davenport, Scott County Iowa. Purcell Print. Co., 1922, p. 147.</a>
                          </div>
 
 
