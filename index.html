@@ -95,9 +95,9 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.449064, lng:  -90.524890},
       {lat: 41.906850, lng:  -90.6432327},
       {lat: 41.425940, lng:  -90.582560},
-       
-
-     
+      {lat: 41.878002, lng:  -93.097702},  
+      {lat: 41.535590, lng:  -90.571180},
+      {lat: 41.523499, lng:  -90.568176},
 
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
@@ -137,6 +137,24 @@ http://www.tooplate.com/view/2085-neuron
          map: map,
          title: 'maps'
       });
+        //Black River
+         var marker6 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[5]),
+         map: map,
+         title: 'maps'
+      });
+        //Brick Munro's pavillon
+         var marker7 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[6]),
+         map: map,
+         title: 'maps'
+      });
+        //Candy Company
+         var marker8 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[7]),
+         map: map,
+         title: 'maps'
+      });
 
 
 
@@ -153,7 +171,7 @@ http://www.tooplate.com/view/2085-neuron
         });
     
         marker1.addListener('click', function() {
-          map.setZoom(11);
+       //   map.setZoom(11);
           map.setCenter(marker1.getPosition());  
         var tag= "#";   
        // alert(marker1.getPosition());
@@ -240,38 +258,7 @@ http://www.tooplate.com/view/2085-neuron
            
         });
         
-         /********************************/
-     
-         map.addListener('center_changed', function() {
-          // 3 seconds after the center of the map has changed, pan back to the
-          // marker.
-          window.setTimeout(function() {
-            map.panTo(marker3.getPosition());
-          }, 3000);
-        });
-    
-        marker3.addListener('click', function() {
-          map.setZoom(11);
-          map.setCenter(marker3.getPosition());  
-        var tag= "#";   
-       // alert(marker1.getPosition());
-        var divElement= marker3.getPosition()+'';      
-        divElement = divElement.replace('.','');
-        divElement = divElement.replace(',','');
-        divElement = divElement.replace('-','');
-        divElement = divElement.replace(' ','');
-        divElement = divElement.replace('.','');
-        divElement = divElement.replace('(','');
-        divElement = divElement.replace(')','');
-
-
-      var page = tag+divElement; // Page cible
-     
-      var speed = 2500; // Durée de l'animation (en ms)
-      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-      return false;
-           
-        });
+        
               /********************************/
      
          map.addListener('center_changed', function() {
@@ -283,7 +270,7 @@ http://www.tooplate.com/view/2085-neuron
         });
     
         marker4.addListener('click', function() {
-          map.setZoom(11);
+         // map.setZoom(11);
           map.setCenter(marker4.getPosition());  
         var tag= "#";   
        // alert(marker1.getPosition());
@@ -295,7 +282,7 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
-
+        
 
       var page = tag+divElement; // Page cible
      
@@ -304,7 +291,7 @@ http://www.tooplate.com/view/2085-neuron
       return false;
            
         });
-              /********************************/
+        /********************************/
      
          map.addListener('center_changed', function() {
           // 3 seconds after the center of the map has changed, pan back to the
@@ -315,9 +302,10 @@ http://www.tooplate.com/view/2085-neuron
         });
     
         marker5.addListener('click', function() {
-          map.setZoom(11);
+          //map.setZoom(11);
           map.setCenter(marker5.getPosition());  
         var tag= "#";   
+       // alert(marker1.getPosition());
         var divElement= marker5.getPosition()+'';      
         divElement = divElement.replace('.','');
         divElement = divElement.replace(',','');
@@ -326,7 +314,104 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
+     // alert(divElement);
 
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+               /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker6.getPosition());
+          }, 3000);
+        });
+    
+        marker6.addListener('click', function() {
+          //map.setZoom(11);
+          map.setCenter(marker6.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker6.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+     // alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                       /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker7.getPosition());
+          }, 3000);
+        });
+    
+        marker7.addListener('click', function() {
+          //map.setZoom(11);
+          map.setCenter(marker7.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker7.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+                               /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker7.getPosition());
+          }, 3000);
+        });
+    
+        marker8.addListener('click', function() {
+          //map.setZoom(11);
+          map.setCenter(marker8.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker8.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+        alert(divElement);
 
       var page = tag+divElement; // Page cible
      
@@ -337,20 +422,8 @@ http://www.tooplate.com/view/2085-neuron
         });
         
         
-          
-
-    
-
-        
-    
-            
-
-
-        
-        
-        
-        
 }
+            
 
            
     </script>
@@ -395,7 +468,6 @@ http://www.tooplate.com/view/2085-neuron
                          <div class="blog-post-image">
                               <a href="single-post.html">
                                   <!-- image-->
-                                  
                                    <img src="images/watchtower1.jpg" class="center" alt="Blog Image">
                                  <cite class="center" style="color: black">Hauberg, John H. Black Hawk State Park, Watch Tower. 1915. Augustana College, Rock Island, IL.Upper Mississippi Valley Digital Image Archive. Web. 4 Feb. 2019.</cite> 
                               </a>
@@ -409,12 +481,6 @@ http://www.tooplate.com/view/2085-neuron
                                 <!--image-->
                                   
                                 <br>
-                              <!--<span><i class="fa"></i> 2nd St Davenport, Iowa </span>
-                             <br>
-                              <span><a href="#"><i class="fa"></i> Svendsen, Marlys. A Davenport Pictorial History. G. Bradley Publishing, 1985.</a></span>
-                                  <br>
-                            <span><a href="#"> Thanet, Octave. “Mother Emeritus”. Stories of a Western Town. New York. Charles Scribner’s Sons, 1904. p. 135-136. </a></span>-->
-
                          
                          <div class="blog-post-des">
                              <h3><a href="single-post.html" style="color: black" >Blackhawk’s Watch Tower Park:</a></h3>
@@ -554,7 +620,7 @@ http://www.tooplate.com/view/2085-neuron
          
 
 
-            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4142594090582560"  href="#4142594090582560">
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41425949058256"  href="#41425949058256">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
                                 <div class="blog-post-thumb">
@@ -577,6 +643,138 @@ http://www.tooplate.com/view/2085-neuron
                              <h3><a href="single-post.html" style="color: black" >African American Church</a></h3>
                               <p>“We had some quaint cullud gents in the old days, sport—happy-go-lucky boys, who didn’t worry so long as they got a chance occasionally to iron out the wrinkles with pohkchops and gravy, or yallerlegs and crushed spuds….The Reverend Emmanuel Franklin was tall, stately, and dignified. He preached salvation and sang in the choir on Sundays in the Afro-American Methodist Church at Fourth and Gaines, slippin’ the brethren the correct dope for travelin’ the straight and narrow path. Reverend Emmanuel never passed the collection plate, as he did chambermaid service on week-days in a Commerical alley livery stable, curryin’ hosses, washin’ buggies, oilin’ harness, and other chores.”</p>
                               <a href="single-post.html" class="btn btn-default">Purcell, William L. Them Was the Good Old Days, in Davenport, Scott County Iowa. Purcell Print. Co., 1922, p. 147.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+             <!--Black River-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="418780029309770200000003"  href="#418780029309770200000003">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/Black%20River.JPG" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Thanet, Octave. Black River. Photograph. Davenport Public Library, Davenport. An Adventure in Photography. Charles Scribner's Sons, 1893. p. 1. </cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: black" >Black River</a></h3>
+                              <p>“Thus Black River had become for all that part of the West a kind of Bitter Creek. All the men from Black River were bad man; the farther up the river you went the worse they were.”</p>
+
+                            <p>“To be without fear of the raftsmen was to win distinction in the eyes of all my fellows; even Stump McKane was afraid of the Black River breed.”</p>
+
+                              <a href="single-post.html" class="btn btn-default">Russell, Charles Edward. A-rafting On The Mississip'. New York : Century Co., 1928., p. 4, 10.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+          <!--Brick Munro’s Pavilion and Summer Garden-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41535599057118000000003"  href="#41535599057118000000003">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/Brick%20Munro's%20Image.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Turner, Jonathan. A Brief History of Bucktown: Davenport's Infamous District Transformed. Arcadia Publishing, 2016. Page 88.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: black" >Brick Munro’s Pavilion and Summer Garden</a></h3>
+                              <p>“THE WORST KNOWN PLACE IN DAVENPORT DESCRIBED AND ANALYZED” (1).</p>
+
+                            <p>“Brick Munro’s is one of the best known — or worst known — places in Davenport. When a drummer from Des Moines, a farmer from Blue Grass, or a theological student from Kalamazoo comes into town, the first thing he asks after he has got a shave and a shine, is the whereabouts of Brick Munro’s. What then is Brick Munro’s, and in what consists its attractiveness?” (1).</p>
+                            
+                             <p>“The girls are department store clerks, servant girls, stenographers, tobacco and candy factory workers, and many others, dressed for the most part attractively and quietly. Here is a girl in a striking suit of green, and there another dressed from head to heel in flaming red. But they are the exception, as are also the two girls from the red-light district, that venture within the entrance arrayed in cool kimonas. Over in the shade stands a special policeman, whose duty it is to see that the lads and lassies who have had too much and are getting loud leave before they have a chance to start a rough house” (1-2).</p>
+                            
+                              <p>“Because modern society is built on the profit system, because it asks not how the multitudes, young and old, of the working class shall be made happy, we have Brick Munro’s. For observe, modern society does ask, how shall the few, young and old, of the exploiting class get their pleasure; and answers it with the wage-system, which gives to the exploiter ownership of all the product of the working class, minus a pittance to keep that working class alive to do more work. The profit system is very good to the exploiters, for they own the machines of production. The working class has not yet dared to answer the question, the most important question of the world today —- how shall the working class be made happy?” (4).</p>
+                            
+                              <p>“Today, desiring happiness with every fibre of its being, it is content with Brick Munro’s. [Eventually] it will ask for…amusement that is rational, pleasure that is lasting, — happiness” (4).</p>
+                            
+
+                              <a href="single-post.html" class="btn btn-default">Dell, Floyd. “Why People Go Brick Munro’s.” The Tri-Cities Worker. Vol. 1.1 no. 11, pp. 1-4.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+                <!--Candy Company-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4152349990568176"  href="#4152349990568176">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/Candy%20Company%20Image.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Roddewig-Schmidt Candy Company. 1917. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Image Archive. Web. 19 Jan. 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: black" >Roddewig-Schmidt Candy Company</a></h3>
+                              <p>“THE WORST KNOWN PLACE IN DAVENPORT DESCRIBED AND ANALYZED” (1).</p>
+
+                            <p>“As Felix went from the office into the factory, his nostrils were at once assailed by the familiar odor of sweets which lay heavily over the whole place. On his way to the elevator he saw rows of aproned girls furiously and skillfully dipping chocolates. He had a glimpse of dozens of men and boys at work on the different floors, and was a little awed by the vastness of the place. It would not be like to cosy little factory in Vickley, where the girls sang at their work” (191).</p>
+                            
+                             <p>“The pain of the molten candy on his unaccustomed hands seemed unbearable, and he cast a wild look about for help” (194).</p>
+                            
+                              <p>“He was overcome with a deeper sense of…childhood helplessness” (194).</p>
+                            
+                              <p>“Felix’s hands and arms were covered with unhealed scratches and raw burns, and in them the tartaric acid was hellfire and poison” (197).</p>
+                            
+                                <p>“Before the week was over, the raw spots on Felix’s finger ends were replaced by callous skin, and pulling candy was no longer painful” (196).</p>
+                            
+
+                              <a href="single-post.html" class="btn btn-default">Dell, Floyd. Moon-Calf, A Novel. Alfred A. Knopf, 1921, pp. 191-197.
+</a>
                          </div>
 
 
