@@ -7,7 +7,7 @@ http://www.tooplate.com/view/2085-neuron
 */
 
 body {
-		background: #ffffff;
+		background: #1E588A;
     font-family: 'Lora', serif;
     font-style: normal;
 		font-weight: 300;
@@ -45,14 +45,14 @@ h3 {
 }
 
 h4 {
-  color: #666;
+  color: #01214E;
   font-size: 12px;
   font-weight: normal;
   letter-spacing: 2px;
 }
 
 p {
-    color: #777;
+    color: #01214E;
     font-size: 15px;
     font-weight: 300;
     line-height: 26px;
@@ -60,7 +60,7 @@ p {
 }
 
 .btn-success:focus {
-  background-color: #000;
+  background-color: #01214E;
   border-color: transparent;
 }
 
@@ -74,14 +74,14 @@ html{
 }
 
 a {
-  color: #4d638c;
+  color: #01214E;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #4d638c;
+  color: #01214E;
   outline: none;
 }
 
@@ -147,11 +147,11 @@ a:hover, a:active, a:focus {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 #1E588A;
 }
 
 .sk-spinner-wordpress.sk-spinner {
-  background-color: #bfba55;
+  background-color: #FFD604;
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -162,7 +162,7 @@ a:hover, a:active, a:focus {
 
 .sk-spinner-wordpress .sk-inner-circle {
   display: block;
-  background-color: #ffffff;
+  background-color: #1E588A;
   width: 16px;
   height: 16px;
   position: absolute;
@@ -196,13 +196,13 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .navbar-default {
-    background: #ffffff;
+    background: #FFD604;
     margin: 0 !important;
     padding: 18px 0;
 }
 
 .navbar-default .navbar-brand {
-  color: #555;
+  color: #01214E;
   font-family: 'Merriweather', serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -211,7 +211,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav li a {
-    color: #777;
+    color: #01214E;
     font-size: 16px;
     letter-spacing: 1px;
     -webkit-transition: all 0.4s ease-in-out;
@@ -221,24 +221,24 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav > li a:hover {
-    color: #bfba55 !important;
+    color: #FFD604 !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #606066;
+    color: #01214E;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav li a:hover,
  .navbar-default .navbar-nav .active > a {
-    color: #bfba55;
+    color: #FFD604;
   }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #bfba55;
+    color: #FFD604;
     background-color: transparent;
 }
 
@@ -248,7 +248,7 @@ a:hover, a:active, a:focus {
   }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background: #bfba55;
+    background: #FFD604;
     border-color: transparent;
   }
 
@@ -266,7 +266,7 @@ a:hover, a:active, a:focus {
 #home {
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
+    color: #FFD604;
     display: -webkit-box;
     display: -webkit-flex;
      display: -ms-flexbox;
@@ -279,26 +279,7 @@ a:hover, a:active, a:focus {
     text-align: center;
 }
 
-.main-home {
-  background: url('../images/home-bg.jpg') no-repeat;
-  height: 100vh;
-}
 
-.main-about {
-  background: url('../images/about-bg.jpg') no-repeat;
-}
-
-.main-single-post {
-  background: url('../images/single-post-bg.jpg') no-repeat;
-}
-
-.main-gallery {
-  background: url('../images/gallery-bg.jpg') no-repeat;
-}
-
-.main-contact {
-  background: url('../images/contact-bg.jpg') no-repeat;
-}
 
 #particles-js {
   position: absolute;
@@ -309,14 +290,14 @@ a:hover, a:active, a:focus {
 }
 
 #home h4 {
-  color: #bfba55;
+  color: #FFD604;
 }
 
 #home .btn {
-  background: #ffffff;
-  border: 2px solid #ffffff;
+  background: #1E588A;
+  border: 2px solid #FFD604;
   border-radius: 100px;
-  color: #444;
+  color: #FFD604;
   font-family: 'Merriweather', serif;
   font-size: 10px;
   font-weight: bold;
@@ -329,8 +310,8 @@ a:hover, a:active, a:focus {
 
 #home .btn:hover {
   background: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #FFD604;
+  color: #FFD604;
 }
 
 
@@ -373,7 +354,7 @@ a:hover, a:active, a:focus {
 }
 
 #gallery .gallery-thumb {
-  background-color: #ffffff;
+  background-color: #1E588A;
   box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
   cursor: pointer;
   display: block;
@@ -415,7 +396,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact .form-control {
-  border: 2px solid #f0f0f0;
+  border: 2px solid #01214E;
   box-shadow: none;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -423,7 +404,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact .form-control:hover {
-  border-color: #555;
+  border-color: #01214E;
 }
 
 #contact input {
@@ -431,16 +412,16 @@ a:hover, a:active, a:focus {
 }
 
 #contact input[type="submit"] {
-  background: #bfba55;
+  background: #FFD604;
   border-radius: 100px;
   border: none;
-  color: #ffffff;
+  color: #FFD604;
   font-weight: bold;
   transition: all 0.4s ease-in-out;
 }
 
 #contact input[type="submit"]:hover {
-  background: #333;
+  background: #01214E;
 }
 
 
@@ -450,7 +431,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .blog-post-thumb {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #01214E;
   padding-top: 32px;
   padding-bottom: 62px;
   margin-bottom: 32px;
@@ -475,11 +456,11 @@ a:hover, a:active, a:focus {
 }
 
 .blog-post-title a {
-  color: #222;
+  color: #FFD604;
 }
 
 .blog-post-title a:hover {
-  color: #bfba55;
+  color: #FFD604;
 }
 
 .blog-post-format {
@@ -492,7 +473,7 @@ a:hover, a:active, a:focus {
 }
 
 .blog-post-format span a {
-  color: #333;
+  color: #FFD604;
 }
 
 .blog-post-format span img {
@@ -507,7 +488,7 @@ a:hover, a:active, a:focus {
 
 .blog-post-des .btn {
   border-radius: 100px;
-  color: #777;
+  color: #01214E;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 14px 28px;
@@ -516,14 +497,14 @@ a:hover, a:active, a:focus {
 }
 
 .blog-post-des .btn:hover {
-  background: #bfba55;
+  background: #FFD604;
   border-color: transparent;
-  color: #ffffff;
+  color: #01214E;
 }
 
 .blog-author {
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #FFD604;
+  border-bottom: 1px solid #01214E;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-top: 42px;
@@ -538,13 +519,13 @@ a:hover, a:active, a:focus {
 
 .blog-author .media a,
 .blog-comment .media h3 {
-  color: #444;
+  color: #01214E;
   font-size: 18px;
   letter-spacing: 1px;
 }
 
 .blog-comment {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #FFD604;
   padding-bottom: 32px;
   margin-bottom: 42px;
 }
@@ -575,14 +556,14 @@ a:hover, a:active, a:focus {
 
 .blog-comment-form .form-control {
   box-shadow: none;
-  border: 2px solid #f0f0f0;
+  border: 2px solid #FFD604;
   margin-top: 10px;
   margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
 }
 
 .blog-comment-form .form-control:hover {
-  border-color: #555;
+  border-color: #01214E;
 }
 
 .blog-comment-form input {
@@ -590,18 +571,18 @@ a:hover, a:active, a:focus {
 }
 
 .blog-comment-form input[type="submit"] {
-  background: #bfba55;
+  background: #FFD604;
   border-radius: 100px;
   border: none;
-  color: #ffffff;
+  color: #FFD604;
   font-weight: bold;
   transition: all 0.4s ease-in-out;
 }
 
 .blog-comment-form input[type="submit"]:hover {
-  background: #333;
+  background: #01214E;
   border-color: transparent;
-  color: #ffffff;
+  color: #01214E;
 }
 
 
@@ -636,19 +617,19 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 footer {
-    background: #000;
-    color: #ffffff;
+    background: #FFD604;
+    color: #01214E;
     padding: 80px 0px;
     position: relative;
 }
 
 footer .col-md-4 .fa {
-  color: #ffffff;
+  color: #01214E;
   padding-right: 8px;
 }
 
 footer hr {
-  border-color: #121212;
+  border-color: #FFD604;
   margin-top: 62px;
   margin-bottom: 42px;
 }
@@ -661,7 +642,7 @@ footer .footer-copyright {
 
 /* Back top */
 .go-top {
-  background-color: #ffffff;
+  background-color: #FFD604;
   box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
   transition : all 1s ease;
   bottom: 2em;
@@ -679,8 +660,8 @@ footer .footer-copyright {
 }
 
 .go-top:hover {
-    background: #bfba55;
-    color: #ffffff;
+    background: #FFD604;
+    color: #FFD604;
 }
 
 
@@ -702,8 +683,8 @@ footer .footer-copyright {
 }
 
 .social-icon li a {
-    border: 2px solid #292929;
-    color: #292929;
+    border: 2px solid #333;
+    color: #333;
     border-radius: 100px;
     cursor: pointer;
     font-size: 16px;
@@ -719,8 +700,8 @@ footer .footer-copyright {
 }
 
 .social-icon li a:hover {
-    border-color: #bfba55;
-    color: #bfba55;
+    border-color: #333;
+    color: #333;
     transform: scale(1.1);
 }
 
