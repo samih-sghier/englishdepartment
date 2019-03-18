@@ -97,6 +97,8 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.878002, lng:  -93.097702},  
       {lat: 41.535590, lng:  -90.571180},
       {lat: 41.523499, lng:  -90.568176},
+      {lat: 41.5453777, lng:  -90.614622},
+       
 
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
@@ -110,50 +112,57 @@ http://www.tooplate.com/view/2085-neuron
          var marker1 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[0]),
          map: map,
-         title: 'maps'
+         title: 'Black Watch Tower Park'
       });
-   
+        //Problems with marker 2
          var marker2 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[1]),
          map: map,
-         title: 'maps'
+         title: 'View of Davenport Street'
       });
         //John Hawk
          var marker3 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[2]),
          map: map,
-         title: 'maps'
+         title: 'John Hawk'
       });
         //Gazette
          var marker4 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[3]),
          map: map,
-         title: 'maps'
+         title: 'Gazette'
       });
          // African American Church
          var marker5 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[4]),
          map: map,
-         title: 'maps'
+         title: 'African American Church'
       });
         //Black River
          var marker6 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[5]),
          map: map,
-         title: 'maps'
+         title: 'Black River'
       });
         //Brick Munro's pavillon
          var marker7 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[6]),
          map: map,
-         title: 'maps'
+         title: 'Brick Munro pavillon'
       });
         //Candy Company
          var marker8 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[7]),
          map: map,
-         title: 'maps'
+         title: 'Candy Company'
       });
+         //Central Park NOT WORKING
+         var marker9 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[8]),
+         map: map,
+         title: 'Central Park'
+      });
+        
 
 
 
@@ -377,7 +386,7 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
-      alert(divElement);
+    //  alert(divElement);
 
       var page = tag+divElement; // Page cible
      
@@ -393,7 +402,7 @@ http://www.tooplate.com/view/2085-neuron
           // 3 seconds after the center of the map has changed, pan back to the
           // marker.
           window.setTimeout(function() {
-            map.panTo(marker7.getPosition());
+            map.panTo(marker8.getPosition());
           }, 3000);
         });
     
@@ -410,7 +419,39 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
-        alert(divElement);
+      //  alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                         /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker9.getPosition());
+          }, 3000);
+        });
+    
+        marker9.addListener('click', function() {
+          //map.setZoom(11);
+          map.setCenter(marker9.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker9.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      //  alert(divElement);
 
       var page = tag+divElement; // Page cible
      
@@ -773,6 +814,47 @@ http://www.tooplate.com/view/2085-neuron
                             
 
                               <a href="single-post.html" class="btn btn-default">Dell, Floyd. Moon-Calf, A Novel. Alfred A. Knopf, 1921, pp. 191-197.
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+                <!--Central Park Avenue-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41545377790614622"  href="#41545377790614622">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/CentralParkImage.JPG" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Collins, David, et al. Davenport Jewel of the Mississippi. Arcadia, 2000.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Central Park</a></h3>
+                            
+
+                            <p>“*Note: Central Park was another name for the fairgrounds before it was renamed Vander Veer park in 1912.
+“Barney Reddy played "Molly Darlin';' "Down in a Coal Mine," and "Sweet Evalina'' on the wheezy hand-organ for the boss-power merry-go-round at the old Fair grounds, where you now got Vander Veer park. The lucky hick that grabbed the brass ring from the ringrack, while buzzin' around, was entitled to another spin free.”</p>
+                            
+
+                              <a href="single-post.html" class="btn btn-default">Purcell, William L. Them Was The Good Old Days. Purcell Printing Company, 1922. pp. 74-75.
+
 </a>
                          </div>
 
