@@ -99,7 +99,9 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.523499, lng:  -90.568176},
       {lat: 41.5453777, lng:  -90.614622},
       {lat: 41.5047384, lng:  -90.5298922},
-       
+      {lat: 41.5043473, lng:  -90.5497666},
+      {lat: 40.924873, lng:  -94.980094},
+        
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 8,
@@ -138,7 +140,7 @@ http://www.tooplate.com/view/2085-neuron
          map: map,
          title: 'African American Church'
       });
-        //Black River
+       //Black River
          var marker6 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[5]),
          map: map,
@@ -170,13 +172,19 @@ http://www.tooplate.com/view/2085-neuron
          title: 'Children Ward'
       });
         
-        //Cooks Home
+       //Cooks Home
          var marker11 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[10]),
          map: map,
          title: 'Cooks Home'
       });
         
+         //Davenport's High School 
+         var marker12 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[11]),
+         map: map,
+         title: 'Davenport High School'
+      });
 
 
 
@@ -520,7 +528,7 @@ http://www.tooplate.com/view/2085-neuron
         marker11.addListener('click', function() {
           //map.setZoom(11);
           map.setCenter(marker11.getPosition());  
-        var tag= "#";   
+         
        // alert(marker1.getPosition());
         var divElement= marker11.getPosition()+'';      
         divElement = divElement.replace('.','');
@@ -532,13 +540,45 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace(')','');
       //  alert(divElement);
 
-      var page = tag+divElement; // Page cible
+      var page = "#"+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });      /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker12.getPosition());
+          }, 3000);
+        });
+    
+          marker12.addListener('click', function() {
+          //map.setZoom(11);
+          map.setCenter(marker12.getPosition());  
+         
+       // alert(marker1.getPosition());
+        var divElement= marker12.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+       // alert(divElement);
+
+      var page = "#"+divElement; // Page cible
      
       var speed = 2500; // Durée de l'animation (en ms)
       $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
       return false;
            
         });
+        
         
         
 }
@@ -1032,7 +1072,7 @@ http://www.tooplate.com/view/2085-neuron
          
                          <!--Cook's Home-->
 
-            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41545377790614622"  href="#41545377790614622">
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415043473905497666"  href="#415043473905497666">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
                                 <div class="blog-post-thumb">
@@ -1071,6 +1111,46 @@ http://www.tooplate.com/view/2085-neuron
                   </div>
           </div>
 
+         
+                   <!--Davenport's High School-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="409248739498009400000001"  href="#409248739498009400000001">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/DavenportHighSchool_IMG_500w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Davenport High School 1889. Digital image. Upper Mississippi Valley Digital Image Archive. American Art Publishing Company, 1 Dec. 2009. Web.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Davenport High School</a></h3>
+                            
+
+                            <p> “He had time to spare. Quite unwittingly and almost wholly undeservedly, Felix had gained at school the reputation of being “a shark” at most of his studies. A series of accidents had given that impression to teachers and pupils alike. He was clumsy at algebra; but on one occasion, when his teacher had been playing bridge very late the night before, she made a mistake in demonstrating the problem; and Felix, in his eagerness to set her right, took the chalk from her fingers and worked it out on the blackboard swiftly and correctly. His “nerve” served to dramatize a gift for mathematics which he did not in fact possess. His history teacher had been equally impressed. Felix’s mind did not easily retain dates and names, nor the events of history in the precise sequences in which they were recorded in the text-book; but he found that when he had forgotten to study his lesson he was able to acquit himself with credit by discussing the events they were dealing with, in the light of other historical works which he had been reading out of school hours. Similarly, in other classes, he had gained a reputation for cleverness, of which he was quite unaware.”
+</p>
+                            
+
+                              <a href="single-post.html" class="btn btn-default">Dell, Floyd. Moon-Calf; a Novel.. Alfred A Knopf, 1921, p. 169.
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
 
 
 
