@@ -100,11 +100,11 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.5453777, lng:  -90.614622},
       {lat: 41.5047384, lng:  -90.5298922},
       {lat: 41.5043473, lng:  -90.5497666},
-      {lat: 40.924873, lng:  -94.980094},
-        
+      {lat: 41.5272042, lng:  -90.6055766},
+ 
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
+    zoom: 12,
     center: {lat: 41.554104, lng: -90.603997}
   });
              
@@ -235,7 +235,7 @@ http://www.tooplate.com/view/2085-neuron
         });
     
         marker2.addListener('click', function() {
-          map.setZoom(11);
+        //  map.setZoom(11);
           map.setCenter(marker2.getPosition());  
         var tag= "#";   
        // alert(marker1.getPosition());
@@ -248,7 +248,7 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
 
-     // alert(divElement);
+      alert(divElement);
       var page = tag+divElement; // Page cible
      
       var speed = 2500; // Durée de l'animation (en ms)
@@ -267,7 +267,7 @@ http://www.tooplate.com/view/2085-neuron
         });
     
         marker3.addListener('click', function() {
-          map.setZoom(11);
+        //  map.setZoom(11);
           map.setCenter(marker3.getPosition());  
         var tag= "#";   
   
@@ -559,7 +559,7 @@ http://www.tooplate.com/view/2085-neuron
           marker12.addListener('click', function() {
           //map.setZoom(11);
           map.setCenter(marker12.getPosition());  
-         
+         var tag ="#";
        // alert(marker1.getPosition());
         var divElement= marker12.getPosition()+'';      
         divElement = divElement.replace('.','');
@@ -569,9 +569,9 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
-       // alert(divElement);
+        alert(divElement);
 
-      var page = "#"+divElement; // Page cible
+      var page = tag+divElement; // Page cible
      
       var speed = 2500; // Durée de l'animation (en ms)
       $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
@@ -652,7 +652,7 @@ http://www.tooplate.com/view/2085-neuron
                     </div>
                </div>
         
-         <!--Bawden brothers studio-->
+         <!--View of Davenport's street-->
               <div class="col-md-offset-1 col-md-10 col-sm-12" id="415246489057262500000002"  href="#415246489057262500000002">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
@@ -1114,7 +1114,7 @@ http://www.tooplate.com/view/2085-neuron
          
                    <!--Davenport's High School-->
 
-            <div class="col-md-offset-1 col-md-10 col-sm-12" id="409248739498009400000001"  href="#409248739498009400000001">
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415272042906055766"  href="#415272042906055766">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
                                 <div class="blog-post-thumb">
@@ -1151,6 +1151,7 @@ http://www.tooplate.com/view/2085-neuron
                         </div>
                   </div>
           </div>
+         
 
 
 
