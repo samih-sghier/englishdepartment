@@ -98,8 +98,8 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.535590, lng:  -90.571180},
       {lat: 41.523499, lng:  -90.568176},
       {lat: 41.5453777, lng:  -90.614622},
+      {lat: 41.5047384, lng:  -90.5298922},
        
-
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 8,
@@ -156,11 +156,25 @@ http://www.tooplate.com/view/2085-neuron
          map: map,
          title: 'Candy Company'
       });
-         //Central Park NOT WORKING
+         //Central Park 
          var marker9 = new google.maps.Marker({
          position: new google.maps.LatLng(locations[8]),
          map: map,
          title: 'Central Park'
+      });
+        
+        //Children Ward
+         var marker10 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[9]),
+         map: map,
+         title: 'Children Ward'
+      });
+        
+        //Cooks Home
+         var marker11 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[10]),
+         map: map,
+         title: 'Cooks Home'
       });
         
 
@@ -444,6 +458,71 @@ http://www.tooplate.com/view/2085-neuron
         var tag= "#";   
        // alert(marker1.getPosition());
         var divElement= marker9.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      //  alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                   /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker10.getPosition());
+          }, 3000);
+        });
+    
+        marker10.addListener('click', function() {
+          //map.setZoom(11);
+          map.setCenter(marker10.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker10.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      //  alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+         /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker11.getPosition());
+          }, 3000);
+        });
+    
+        marker11.addListener('click', function() {
+          //map.setZoom(11);
+          map.setCenter(marker11.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker11.getPosition()+'';      
         divElement = divElement.replace('.','');
         divElement = divElement.replace(',','');
         divElement = divElement.replace('-','');
@@ -869,8 +948,128 @@ http://www.tooplate.com/view/2085-neuron
          
          
          
+         
+         
+
+           <!--Candy Company-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415047384905298922"  href="#415047384905298922">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/Children'sWardImage.JPG" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Quad-City Memories:  The Early Years. Quad City-Times, 2015.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Children’s Ward</a></h3>
+                              <p>I.</p>
+
+                            <p> At first in dreams<br>
+                                I pressed you so close<br>
+                                That you melted away on my breast,<br>
+                                But now I wait, breathless and motionless,<br>
+                                Till I feel your slender arms caress me<br>
+                                Like swallows blown against me<br>
+                                And quickly flown.<br>
+                            </p>
+                               <p>II.</p>
+
+                            <p> Small flower,<br>
+                                My body is the earth from which you sprang,<br>
+                                But we are more to each other than earth and flower,<br>
+                                Closer, eve, than earth and flower,<br>
+                                For the sky in me is one with the sky in you . . .<br>
+                                My love for you<br>
+                                Is like sunlight shining in a quiet place,<br>
+                                You shall feel my love like soft light<br>
+                                Pouring about you<br>
+                            </p>
+                                <p>III.</p>
+
+                            <p> I will not kiss you,<br>
+                                For my kisses are a chain without an end;<br>
+                                Nor take you in my arms,<br>
+                                My arms would smother you against my breast;<br>
+                                I will not even touch your shining head --<br>
+                                But lift your eyes up, flower-face,<br>
+                                And I will fill them as full of love<br>
+                                As they can hold!<br>
+                            </p>
+                               <p>IV.</p>
+
+                            <p> Ah no! If you were here<br>
+                                I would sweep you into my arms and hold you close!<br>
+                                Though my love is of the spirit<br>
+                                I must feel your little restless body<br>
+                                Pressed for a moment against my heart.<br>
+                            </p>
+
+                              <a href="single-post.html" class="btn btn-default">Seiffert, Marjorie Allen. “To an Absent Child.” A Woman of Thirty and Poems of Elijah Hay. Alfred A. Knopf, 1919. p. 78.
+</a>
+                         </div>
 
 
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+                         <!--Cook's Home-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41545377790614622"  href="#41545377790614622">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/CooksHomeForTheFriendless_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Davenport, Picturesque and Descriptive. American Art Publishing Company, 1889. Davenport Public Library, Davenport. Upper Mississippi Valley Digital Image Archive. Web. 21 Jan 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Cook’s Home for the Friendless</a></h3>
+                            
+
+                            <p> “The place for a long time was a white elephant on the hands of the creditors. They rented the farm, but who wanted that great building which Bert Groves had believed was going to be crowded with people coming from far and near to drink Crystal Sulphur Water? A woman tried it for summer boarders, but Bert Groves’ hopes had been too high; it was on too big a scale. For years it stood there deserted; and so, when with the growth of the town ‘The Farm’ as well as other things needed bigger quarters, the Groves place was eagerly offered for consideration. It was run down; it could be had very cheap. And so at last a use was found for the sanitorium.” 
+</p>
+                            
+
+                              <a href="single-post.html" class="btn btn-default">Glaspell, Susan. “The Manager of Crystal Sulphur Springs.” Her America: “A Jury of Her Peers” and Other Stories by Susan Glaspell, edited by Patricia L. Bryan and Martha C. Carpentier, University of Iowa Press, 2010, p. 45.
+
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
 
 
 

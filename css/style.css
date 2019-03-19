@@ -221,6 +221,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav > li a:hover {
+    
     color: #FFD604 !important;
 }
 
@@ -488,11 +489,15 @@ a:hover, a:active, a:focus {
 
 .blog-post-des .btn {
   border-radius: 100px;
+  background:#FFD604; 
   color: #01214E;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 14px 28px;
   margin-top: 26px;
+  width: 1000px;
+  height: 50px;
+  overflow: auto;
   transition: all 0.4s ease-in-out;
 }
 
