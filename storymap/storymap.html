@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Davenport Writers</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">Davenport Writers Website</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">Places</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 300px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }  
+     #home {
+        height: 250px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+     #space{
+        height: 50px;  /* The height is 300 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+    </style> 
+
+    
+    <!-- Alternative Google Map API: <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1g2cZHoqGyqpxv-f9zMBxNTs3Gu6h45bn" width="640" height="480"></iframe>-->
+    <!--Google Map API -->
+  
+        <script>
+   
+    function initMap() {
+      
+            var markers = [];
+     var i;   
+  var locations = [
+      
+      {lat: 41.4643379, lng: -90.5750538},
+      {lat: 41.524648, lng:  -90.572625},    
+      {lat: 41.449064, lng:  -90.524890},
+      {lat: 41.906850, lng:  -90.6432327},
+      {lat: 41.425940, lng:  -90.582560},
+      {lat: 41.878002, lng:  -93.097702},  
+      {lat: 41.535590, lng:  -90.571180},
+      {lat: 41.523499, lng:  -90.568176},
+      {lat: 41.5453777, lng:  -90.614622},
+      {lat: 41.5047384, lng:  -90.5298922},
+      {lat: 41.5043473, lng:  -90.5497666},
+      {lat: 41.5272042, lng:  -90.6055766},
+ 
+    ];  
+      var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: {lat: 41.554104, lng: -90.603997}
+  });
+             
+  
+      
+         
+         var marker1 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[0]),
+         map: map,
+         title: 'Black Watch Tower Park'
+      });
+        //Problems with marker 2
+         var marker2 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[1]),
+         map: map,
+         title: 'View of Davenport Street'
+      });
+        //John Hawk
+         var marker3 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[2]),
+         map: map,
+         title: 'John Hawk'
+      });
+        //Gazette
+         var marker4 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[3]),
+         map: map,
+         title: 'Gazette'
+      });
+         // African American Church
+         var marker5 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[4]),
+         map: map,
+         title: 'African American Church'
+      });
+       //Black River
+         var marker6 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[5]),
+         map: map,
+         title: 'Black River'
+      });
+        //Brick Munro's pavillon
+         var marker7 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[6]),
+         map: map,
+         title: 'Brick Munro pavillon'
+      });
+        //Candy Company
+         var marker8 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[7]),
+         map: map,
+         title: 'Candy Company'
+      });
+         //Central Park 
+         var marker9 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[8]),
+         map: map,
+         title: 'Central Park'
+      });
+        
+        //Children Ward
+         var marker10 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[9]),
+         map: map,
+         title: 'Children Ward'
+      });
+        
+       //Cooks Home
+         var marker11 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[10]),
+         map: map,
+         title: 'Cooks Home'
+      });
+        
+         //Davenport's High School 
+         var marker12 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[11]),
+         map: map,
+         title: 'Davenport High School'
+      });
+
+
+
+            
+               
+ 
+        
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker1.getPosition());
+          }, 3000);
+        });
+    
+        marker1.addListener('click', function() {
+       //   map.setZoom(11);
+       //   map.setCenter(marker1.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker1.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+        
+        /********************************/
+     
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker2.getPosition());
+          }, 3000);
+        });
+    
+        marker2.addListener('click', function() {
+        //  map.setZoom(11);
+        //  map.setCenter(marker2.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker2.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+      alert(divElement);
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker3.getPosition());
+          }, 3000);
+        });
+    
+        marker3.addListener('click', function() {
+        //  map.setZoom(11);
+         // map.setCenter(marker3.getPosition());  
+        var tag= "#";   
+  
+        var divElement= marker3.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+        
+              /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker4.getPosition());
+          }, 3000);
+        });
+    
+        marker4.addListener('click', function() {
+         // map.setZoom(11);
+        //  map.setCenter(marker4.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker4.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+        
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker5.getPosition());
+          }, 3000);
+        });
+    
+        marker5.addListener('click', function() {
+          //map.setZoom(11);
+         // map.setCenter(marker5.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker5.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+     // alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+               /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker6.getPosition());
+          }, 3000);
+        });
+    
+        marker6.addListener('click', function() {
+          //map.setZoom(11);
+         // map.setCenter(marker6.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker6.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+     // alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                       /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker7.getPosition());
+          }, 3000);
+        });
+    
+        marker7.addListener('click', function() {
+          //map.setZoom(11);
+         // map.setCenter(marker7.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker7.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+    //  alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+                               /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker8.getPosition());
+          }, 3000);
+        });
+    
+        marker8.addListener('click', function() {
+          //map.setZoom(11);
+         // map.setCenter(marker8.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker8.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      //  alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                         /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker9.getPosition());
+          }, 3000);
+        });
+    
+        marker9.addListener('click', function() {
+          //map.setZoom(11);
+         // map.setCenter(marker9.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker9.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      //  alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                   /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker10.getPosition());
+          }, 3000);
+        });
+    
+        marker10.addListener('click', function() {
+          //map.setZoom(11);
+        //  map.setCenter(marker10.getPosition());  
+        var tag= "#";   
+       // alert(marker1.getPosition());
+        var divElement= marker10.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      //  alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+         /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker11.getPosition());
+          }, 3000);
+        });
+    
+        marker11.addListener('click', function() {
+          //map.setZoom(11);
+       //   map.setCenter(marker11.getPosition());  
+         
+       // alert(marker1.getPosition());
+        var divElement= marker11.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      //  alert(divElement);
+
+      var page = "#"+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });      /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker12.getPosition());
+          }, 3000);
+        });
+    
+          marker12.addListener('click', function() {
+          //map.setZoom(11);
+        //  map.setCenter(marker12.getPosition());  
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker12.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+        alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        
+        
+        
+}
+            
+
+           
+    </script>
+    
+     <div id="map" class="js-scrollTo navbar-brand" href="#map"></div>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw3_P1gUhLBKZc60R4Y9DAsA9ct0EtTQQ&callback=initMap">
+    </script>
+     <br>
+     <br>
+     <section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <h1>DAVENPORT</h1>
+                    <h4>WRITERS</h4>
+                    <a href="#blog" class="smoothScroll btn btn-default">Take a tour!</a>
+               </div>
+          </div>
+     </div>
+     </section>
+    
+
+<!-- Blog Section -->
+    <style>
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    
+    </style>
+            <!--Black Hawk Watch Tower Section-->
+<section id="blog">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-offset-1 col-md-10 col-sm-12" id="4146433799057505379999998" class="4146433799057505379999998" href="#4146433799057505379999998">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                  <!-- image-->
+                                   <img src="images/WatchTower1_IMG_500w.jpg" class="center" alt="Blog Image">
+                                 <cite class="center" style="color: black">Hauberg, John H. Black Hawk State Park, Watch Tower. 1915. Augustana College, Rock Island, IL.Upper Mississippi Valley Digital Image Archive. Web. 4 Feb. 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                                <!--image-->
+                                  
+                                <br>
+                         
+                         <div class="blog-post-des">
+                             <h3><a href="single-post.html" style="color: #FFD604" >Blackhawk’s Watch Tower Park:</a></h3>
+                              <p>“Two leave the park and the crowds--The stars shine out,  A river runs at their feet, behind them, a leafy copse, Away on the other shore, the fields of grain Lie sleeping peacefully in the starlight. Tonight the world is theirs, a legacy From those who lived familiar friends with river, field and forest--- Their forebears Through the night, the same earth-magic moves them Which swayed those ancient ones, long dead-- And these, too, lean and drink, Drink deeply from the river, the flowing river of life.” </p>
+                             <a href="single-post.html" class="btn btn-default" >“Seiffert, Marjorie Allen. <b style="font-style: italic">“The Picnic.” A Woman of Thirty and Poems of Elijah Hay.</b> Alfred A Knopf, 1919. p. 61.””</a>
+                         </div>
+                    </div>
+                        </div>
+                        
+                    </div>
+               </div>
+        
+         <!--View of Davenport's street-->
+              <div class="col-md-offset-1 col-md-10 col-sm-12" id="415246489057262500000002"  href="#415246489057262500000002">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                  <!-- image-->
+                                   <img src="images/SteepleLight_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Bawden Brothers Studio. Perry Street Looking North From Between Second and Third Streets. Ca. 1887. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Archive. Web. 20 January 2019. </cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                         <div class="blog-post-des">
+                             <h3><a href="single-post.html" style="color: #FFD604" >View of Davenport Street Featuring Steeple and early Arc Lighting</a></h3>
+                              <p>“My father once drew my attention to the steeple lights that were still in use in Davenport. These were tall metal frames like those of windmills, on which were hung a number of arc lights. The light was diffused over a neighborhood like pale moonlight. They were found impractical. Arc lights were then hung over the intersections of the streets, and every morning a man cleaned dead insects out of the bowl and replaced the carbon sticks. Outside the business district he simply threw the used carbons into the street, where wagons ground them into the dirt”.</p>
+                             <a href="single-post.html" class="btn btn-default">Hansen, Harry. <b style="font-style: italic">A Davenport Boyhood.</b>  State Historical Society of Iowa, 1956, p. 166.</a>
+                         </div>
+                    </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <!--JOHN BLACK HAWK-->
+         
+         
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="414490649052489000000003"  href="#414490649052489000000003">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                  <!-- image-->
+                                   <img src="images/SaukTerritory_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Hauberg, John H. Black Hawk’s great grandson, Jesse KakaQue. Ca. 23 June 1916. Augustana College Special Collections, Rock Island, IL. Upper Mississippi Valley Digital Archive. Web. 21 Jan 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                         <div class="blog-post-des">
+                             <h3><a href="single-post.html" style="color: #FFD604" >Black Hawk’s Great Grandson Overlooking Sauk Territory </a></h3>
+                              <p>“Our village was situated on the north side of the Rock river, at the foot of its raids and on the point of land between Rock river and the Mississippi. In its front, a prairie extended to the bank of the Mississippi; and in our rear, a continued bluff, gently ascending from the prairie. On the side of this bluff we had our corn-fields, extending about two miles up, running parallel with the Mississippi; where we joined those of the Foxes, whose village was on the bank of the Mississippi, opposite the lower end of Rock Island, and three miles distant from ours. We had about eight hundred acres in cultivation, including what we had on the islands of Rock River. The land around our village, uncultivated, was covered with blue-grass, which made excellent pasture for our horses. Several fine springs broke out of the bluff, near by, from which we were supplied with good water. The rapids of the Rock river furnished us with an abundance of excellent fish, and the land, being good, never failed to produce good crops of corn, beans, pumpkins, and squashes. We always had plenty—our children never cried with hunger, nor our people were never in want. Here our village had stood for more than a hundred years, during all which time we were the undisputed possessors of the valley of the Mississippi, from the Ouisonsin to the Portage des Sioux, near the mouth of the Missouri, being about seven hundred miles in length.”</p>
+                             <a href="single-post.html" class="btn btn-default">Black Hawk.<b style="font-style: italic">  Life of Black Hawk, or Ma-Ka-Tai-Me-She-Kia-Kiak. 1882. Penguin Books,</b>  2008, pp. 45-46.</a>
+                         </div>
+            
+             
+                                 </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+               
+        
+         
+         
+         
+
+         
+         
+         
+         
+          <!--The Gazette-->
+         
+
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4190685906432327"  href="#41906850906432327">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/Gazette_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Schmitz, Arthur. Wheatland Iowa Gazette print room. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Image Archive. Web. 13 Feb. 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Gazette Printing Press</a></h3>
+                              <p>"The press held my fascinated attention, no less than its big brother of 25 units a day. It was a flat bed machine, printing from type, and it ground out papers methodically and slowly."</p>
+                            <a href="single-post.html" class="btn btn-default">Hanson, Harry.<b style="font-style: italic"> Palimpsest: Vol. XXXVII No. 4, April 1956; A Davenport Boyhood. XXXVII,</b> State Historical Society of Iowa, 1956, p. 219.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+                <!--African American Church-->
+         
+
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41425949058256"  href="#41425949058256">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/AfricanAmericanChurch_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Svendsen, Marlys A., John Pfiffner, and Martha H. Bowers. Davenport, Where the Mississippi Runs West: A Survey of Davenport History & Architecture. Davenport, IA: City of Davenport, 1982, p. 1.11.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >African American Church</a></h3>
+                              <p>“We had some quaint cullud gents in the old days, sport—happy-go-lucky boys, who didn’t worry so long as they got a chance occasionally to iron out the wrinkles with pohkchops and gravy, or yallerlegs and crushed spuds….The Reverend Emmanuel Franklin was tall, stately, and dignified. He preached salvation and sang in the choir on Sundays in the Afro-American Methodist Church at Fourth and Gaines, slippin’ the brethren the correct dope for travelin’ the straight and narrow path. Reverend Emmanuel never passed the collection plate, as he did chambermaid service on week-days in a Commerical alley livery stable, curryin’ hosses, washin’ buggies, oilin’ harness, and other chores.”</p>
+                            <a href="single-post.html" class="btn btn-default">Purcell, William L. <b style="font-style: italic"> Them Was the Good Old Days, in Davenport,</b> Scott County Iowa. Purcell Print. Co., 1922, p. 147.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+             <!--Black River-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="418780029309770200000003"  href="#418780029309770200000003">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/Black%20River.JPG" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Thanet, Octave. Black River. Photograph. Davenport Public Library, Davenport. An Adventure in Photography. Charles Scribner's Sons, 1893. p. 1. </cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Black River</a></h3>
+                              <p>“Thus Black River had become for all that part of the West a kind of Bitter Creek. All the men from Black River were bad man; the farther up the river you went the worse they were.”</p>
+
+                            <p>“To be without fear of the raftsmen was to win distinction in the eyes of all my fellows; even Stump McKane was afraid of the Black River breed.”</p>
+
+                            <a href="single-post.html" class="btn btn-default">Russell, Charles Edward. <b style="font-style: italic">A-rafting On The Mississip'.</b> New York : Century Co., 1928., p. 4, 10.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+          <!--Brick Munro’s Pavilion and Summer Garden-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41535599057118000000003"  href="#41535599057118000000003">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/Brick%20Munro's%20Image.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Turner, Jonathan. A Brief History of Bucktown: Davenport's Infamous District Transformed. Arcadia Publishing, 2016. Page 88.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Brick Munro’s Pavilion and Summer Garden</a></h3>
+                              <p>“THE WORST KNOWN PLACE IN DAVENPORT DESCRIBED AND ANALYZED” (1).</p>
+
+                            <p>“Brick Munro’s is one of the best known — or worst known — places in Davenport. When a drummer from Des Moines, a farmer from Blue Grass, or a theological student from Kalamazoo comes into town, the first thing he asks after he has got a shave and a shine, is the whereabouts of Brick Munro’s. What then is Brick Munro’s, and in what consists its attractiveness?” (1).</p>
+                            
+                             <p>“The girls are department store clerks, servant girls, stenographers, tobacco and candy factory workers, and many others, dressed for the most part attractively and quietly. Here is a girl in a striking suit of green, and there another dressed from head to heel in flaming red. But they are the exception, as are also the two girls from the red-light district, that venture within the entrance arrayed in cool kimonas. Over in the shade stands a special policeman, whose duty it is to see that the lads and lassies who have had too much and are getting loud leave before they have a chance to start a rough house” (1-2).</p>
+                            
+                              <p>“Because modern society is built on the profit system, because it asks not how the multitudes, young and old, of the working class shall be made happy, we have Brick Munro’s. For observe, modern society does ask, how shall the few, young and old, of the exploiting class get their pleasure; and answers it with the wage-system, which gives to the exploiter ownership of all the product of the working class, minus a pittance to keep that working class alive to do more work. The profit system is very good to the exploiters, for they own the machines of production. The working class has not yet dared to answer the question, the most important question of the world today —- how shall the working class be made happy?” (4).</p>
+                            
+                              <p>“Today, desiring happiness with every fibre of its being, it is content with Brick Munro’s. [Eventually] it will ask for…amusement that is rational, pleasure that is lasting, — happiness” (4).</p>
+                            
+
+                            <a href="single-post.html" class="btn btn-default">Dell, Floyd. <b style="font-style: italic">“Why People Go Brick Munro’s.” The Tri-Cities Worker.</b> Vol. 1.1 no. 11, pp. 1-4.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+                <!--Candy Company-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4152349990568176"  href="#4152349990568176">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/CandyCompany_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Roddewig-Schmidt Candy Company. 1917. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Image Archive. Web. 19 Jan. 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Roddewig-Schmidt Candy Company</a></h3>
+                              <p>“THE WORST KNOWN PLACE IN DAVENPORT DESCRIBED AND ANALYZED” (1).</p>
+
+                            <p>“As Felix went from the office into the factory, his nostrils were at once assailed by the familiar odor of sweets which lay heavily over the whole place. On his way to the elevator he saw rows of aproned girls furiously and skillfully dipping chocolates. He had a glimpse of dozens of men and boys at work on the different floors, and was a little awed by the vastness of the place. It would not be like to cosy little factory in Vickley, where the girls sang at their work” (191).</p>
+                            
+                             <p>“The pain of the molten candy on his unaccustomed hands seemed unbearable, and he cast a wild look about for help” (194).</p>
+                            
+                              <p>“He was overcome with a deeper sense of…childhood helplessness” (194).</p>
+                            
+                              <p>“Felix’s hands and arms were covered with unhealed scratches and raw burns, and in them the tartaric acid was hellfire and poison” (197).</p>
+                            
+                                <p>“Before the week was over, the raw spots on Felix’s finger ends were replaced by callous skin, and pulling candy was no longer painful” (196).</p>
+                            
+
+                            <a href="single-post.html" class="btn btn-default">Dell, Floyd. <b style="font-style: italic">Moon-Calf, A Novel.</b> Alfred A. Knopf, 1921, pp. 191-197.
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+                <!--Central Park Avenue-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="41545377790614622"  href="#41545377790614622">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/CentralPark_IMG_1000w.JPG" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Collins, David, et al. Davenport Jewel of the Mississippi. Arcadia, 2000.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Central Park</a></h3>
+                            
+
+                            <p>“*Note: Central Park was another name for the fairgrounds before it was renamed Vander Veer park in 1912.
+“Barney Reddy played "Molly Darlin';' "Down in a Coal Mine," and "Sweet Evalina'' on the wheezy hand-organ for the boss-power merry-go-round at the old Fair grounds, where you now got Vander Veer park. The lucky hick that grabbed the brass ring from the ringrack, while buzzin' around, was entitled to another spin free.”</p>
+                            
+
+                            <a href="single-post.html" class="btn btn-default">Purcell, William L. <b style="font-style: italic">Them Was The Good Old Days.</b> Purcell Printing Company, 1922. pp. 74-75.
+
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+         
+         
+         
+
+           <!--Candy Company-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415047384905298922"  href="#415047384905298922">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/ChildrensWard_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Quad-City Memories:  The Early Years. Quad City-Times, 2015.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Children’s Ward</a></h3>
+                              <p>I.</p>
+
+                            <p> At first in dreams<br>
+                                I pressed you so close<br>
+                                That you melted away on my breast,<br>
+                                But now I wait, breathless and motionless,<br>
+                                Till I feel your slender arms caress me<br>
+                                Like swallows blown against me<br>
+                                And quickly flown.<br>
+                            </p>
+                               <p>II.</p>
+
+                            <p> Small flower,<br>
+                                My body is the earth from which you sprang,<br>
+                                But we are more to each other than earth and flower,<br>
+                                Closer, eve, than earth and flower,<br>
+                                For the sky in me is one with the sky in you . . .<br>
+                                My love for you<br>
+                                Is like sunlight shining in a quiet place,<br>
+                                You shall feel my love like soft light<br>
+                                Pouring about you<br>
+                            </p>
+                                <p>III.</p>
+
+                            <p> I will not kiss you,<br>
+                                For my kisses are a chain without an end;<br>
+                                Nor take you in my arms,<br>
+                                My arms would smother you against my breast;<br>
+                                I will not even touch your shining head --<br>
+                                But lift your eyes up, flower-face,<br>
+                                And I will fill them as full of love<br>
+                                As they can hold!<br>
+                            </p>
+                               <p>IV.</p>
+
+                            <p> Ah no! If you were here<br>
+                                I would sweep you into my arms and hold you close!<br>
+                                Though my love is of the spirit<br>
+                                I must feel your little restless body<br>
+                                Pressed for a moment against my heart.<br>
+                            </p>
+
+                            <a href="single-post.html" class="btn btn-default">Seiffert, Marjorie Allen. <b style="font-style: italic">“To an Absent Child.” A Woman of Thirty and Poems of Elijah Hay.</b> Alfred A. Knopf, 1919. p. 78.
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+         
+                         <!--Cook's Home-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415043473905497666"  href="#415043473905497666">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/CooksHomeForTheFriendless_IMG_1000w.jpg" class="center" alt="Blog Image">
+                                  <cite class="center" style="color: black">Davenport, Picturesque and Descriptive. American Art Publishing Company, 1889. Davenport Public Library, Davenport. Upper Mississippi Valley Digital Image Archive. Web. 21 Jan 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Cook’s Home for the Friendless</a></h3>
+                            
+
+                            <p> “The place for a long time was a white elephant on the hands of the creditors. They rented the farm, but who wanted that great building which Bert Groves had believed was going to be crowded with people coming from far and near to drink Crystal Sulphur Water? A woman tried it for summer boarders, but Bert Groves’ hopes had been too high; it was on too big a scale. For years it stood there deserted; and so, when with the growth of the town ‘The Farm’ as well as other things needed bigger quarters, the Groves place was eagerly offered for consideration. It was run down; it could be had very cheap. And so at last a use was found for the sanitorium.” 
+</p>
+                            
+
+                            <a href="single-post.html" class="btn btn-default">Glaspell, Susan.<b style="font-style: italic"> “The Manager of Crystal Sulphur Springs.” Her America: “A Jury of Her Peers” and Other Stories</b> by Susan Glaspell, edited by Patricia L. Bryan and Martha C. Carpentier, University of Iowa Press, 2010, p. 45.
+
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+
+         
+                   <!--Davenport's High School-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415272042906055766"  href="#415272042906055766">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="single-post.html">
+                                   <img src="images/DavenportHighSchool_IMG_500w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black">Davenport High School 1889. <b style="font-style: italic">Digital image</b>. Upper Mississippi Valley Digital Image Archive. American Art Publishing Company, 1 Dec. 2009. Web.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="single-post.html" style="color: #FFD604" >Davenport High School</a></h3>
+                            
+
+                            <p> “He had time to spare. Quite unwittingly and almost wholly undeservedly, Felix had gained at school the reputation of being “a shark” at most of his studies. A series of accidents had given that impression to teachers and pupils alike. He was clumsy at algebra; but on one occasion, when his teacher had been playing bridge very late the night before, she made a mistake in demonstrating the problem; and Felix, in his eagerness to set her right, took the chalk from her fingers and worked it out on the blackboard swiftly and correctly. His “nerve” served to dramatize a gift for mathematics which he did not in fact possess. His history teacher had been equally impressed. Felix’s mind did not easily retain dates and names, nor the events of history in the precise sequences in which they were recorded in the text-book; but he found that when he had forgotten to study his lesson he was able to acquit himself with credit by discussing the events they were dealing with, in the light of other historical works which he had been reading out of school hours. Similarly, in other classes, he had gained a reputation for cleverness, of which he was quite unaware.”
+</p>
+                            
+
+                            <a href="single-post.html" class="btn btn-default">Dell, Floyd. <b style="font-style: italic">Moon-Calf; a Novel..</b> Alfred A Knopf, 1921, p. 169.
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+
+
+
+
+
+    
+                          
+                           
+                
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Augustana College</h3>
+                    <p>Some Text</p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2019 English Department</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p><i class="fa fa-globe"></i> 639 38th ST Rock Island, IL 61201</p>
+                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
+                    <p><i class="fa fa-save"></i> englishdepartment@augustana.edu</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
