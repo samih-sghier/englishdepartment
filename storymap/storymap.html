@@ -100,7 +100,9 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.5047384, lng:  -90.5298922},
       {lat: 41.5043473, lng:  -90.5497666},
       {lat: 41.5272042, lng:  -90.6055766},
- 
+      {lat: 41.5624805, lng: -90.6337373},
+      {lat: 41.4788144, lng: -90.5858414},
+        
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -184,7 +186,18 @@ http://www.tooplate.com/view/2085-neuron
          map: map,
          title: 'Davenport High School'
       });
-
+        //Turner Hall 
+         var marker13 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[12]),
+         map: map,
+         title: 'Turner Hall Davenport'
+      });
+       //Namequa-creek
+         var marker14 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[13]),
+         map: map,
+         title: 'Nam-e-qua Creek'
+      });
 
 
             
@@ -222,10 +235,10 @@ http://www.tooplate.com/view/2085-neuron
            
         });
         
-        
-        /********************************/
      
-        map.addListener('center_changed', function() {
+                /********************************/
+     
+         map.addListener('center_changed', function() {
           // 3 seconds after the center of the map has changed, pan back to the
           // marker.
           window.setTimeout(function() {
@@ -233,10 +246,10 @@ http://www.tooplate.com/view/2085-neuron
           }, 3000);
         });
     
-        marker2.addListener('click', function() {
-        //  map.setZoom(11);
-        //  map.setCenter(marker2.getPosition());  
-        var tag= "#";   
+          marker2.addListener('click', function() {
+          //map.setZoom(11);
+        //  map.setCenter(marker12.getPosition());  
+         var tag ="#";
        // alert(marker1.getPosition());
         var divElement= marker2.getPosition()+'';      
         divElement = divElement.replace('.','');
@@ -246,8 +259,8 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
+      //  alert(divElement);
 
-      alert(divElement);
       var page = tag+divElement; // Page cible
      
       var speed = 2500; // Durée de l'animation (en ms)
@@ -568,6 +581,70 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
+       // alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+        /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker13.getPosition());
+          }, 3000);
+        });
+    
+          marker13.addListener('click', function() {
+          //map.setZoom(11);
+        //  map.setCenter(marker12.getPosition());  
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker13.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+       // alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker14.getPosition());
+          }, 3000);
+        });
+    
+          marker14.addListener('click', function() {
+          //map.setZoom(11);
+        //  map.setCenter(marker12.getPosition());  
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker14.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
         alert(divElement);
 
       var page = tag+divElement; // Page cible
@@ -577,6 +654,9 @@ http://www.tooplate.com/view/2085-neuron
       return false;
            
         });
+     
+     
+
         
         
         
@@ -652,7 +732,7 @@ http://www.tooplate.com/view/2085-neuron
                </div>
         
          <!--View of Davenport's street-->
-              <div class="col-md-offset-1 col-md-10 col-sm-12" id="415246489057262500000002"  href="#415246489057262500000002">
+              <div class="col-md-offset-1 col-md-10 col-sm-12" id=""  href="#">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
                                 <div class="blog-post-thumb">
@@ -1151,7 +1231,94 @@ http://www.tooplate.com/view/2085-neuron
          
 
 
+ <!--Turner Hall Davenport-->
 
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415624805906337373"  href="#415624805906337373">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/TurnerHall_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black"> <b style="font-style: italic">History of Davenport and Scott County,</b>. Vol 1.Page 812. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Image Archive.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Turner Hall</a></h3>
+                            
+
+                            <p> “Felix hesitated, then entered one of them at random. It gave upon the lobby of a
+                                theatre. The man in the box-office knew the prices of seats for the German play that was to be
+                                given there that night; but apparently he knew nothing else. So Felix tried the next entrance, and
+                                found himself suddenly in a gymnasium, where a bloomered class of young women were at that
+                                moment engaged in turning handsprings. The director plainly regarded Felix as a rash intruder,
+                                and refused to give him any information about· anything. So Felix backed out, apologizing. The
+                                third entrance revealed a flight of steps. Felix went up. At the first landing he encountered what
+                                seemed to be the janitor; but the man seemed not to understand English very well, so Felix
+                                explored for himself.”
+                            </p>
+                       
+
+                            <a href="" class="btn btn-default">Dell, Floyd. <b style="font-style: italic">Moon-Calf; a Novel..</b> Alfred A Knopf, 1921, p. 158.
+</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         
+          <!--Namequa's Spring-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4147881449058584139999999"  href="#4147881449058584139999999">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/NamEQuaCreek_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black"> <b style="font-style: italic">Black Hawk’s Autobiography</b> St Louis Press of Continental Printing Co. 1882..</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Nam-e-qua Creek</a></h3>
+                            
+
+                            <p> “Set them as the prophet did around the spring, and look and see if any vision will make clear the dream. (Nam-e-qua smooths the sand around the spring as though smoothing the mind. She takes crystals and kernels, and with self-hypnotizing rhythm sets them in a magic pattern. Suddenly she stops, arrested by what forms in the spring.) Vision?”
+                            </p>
+                       
+
+                            <a href="" class="btn btn-default">Cook, George Cram. <b style="font-style: italic">The Spring: A Play.</b> Frank Shay, 1921, p. 11.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
 
 
     
