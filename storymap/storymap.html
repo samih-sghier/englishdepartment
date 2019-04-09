@@ -102,6 +102,7 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.5272042, lng:  -90.6055766},
       {lat: 41.5624805, lng: -90.6337373},
       {lat: 41.4788144, lng: -90.5858414},
+      {lat: 41.534677, lng: -90.6049867},
         
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
@@ -198,11 +199,14 @@ http://www.tooplate.com/view/2085-neuron
          map: map,
          title: 'Nam-e-qua Creek'
       });
+          //Fejervary Park
+         var marker15 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[14]),
+         map: map,
+         title: 'Fejervary Park'
+      });
 
 
-            
-               
- 
         
         map.addListener('center_changed', function() {
           // 3 seconds after the center of the map has changed, pan back to the
@@ -613,7 +617,6 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
-       // alert(divElement);
 
       var page = tag+divElement; // Page cible
      
@@ -645,7 +648,35 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
-        alert(divElement);
+
+      var page = tag+divElement; // Page cible
+     
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                     /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker15.getPosition());
+          }, 3000);
+        });
+    
+          marker15.addListener('click', function() {
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker15.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
 
       var page = tag+divElement; // Page cible
      
@@ -1311,6 +1342,46 @@ http://www.tooplate.com/view/2085-neuron
                        
 
                             <a href="" class="btn btn-default">Cook, George Cram. <b style="font-style: italic">The Spring: A Play.</b> Frank Shay, 1921, p. 11.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+         
+         <!--Fejervary Park, Davenport, Iowa-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415346779060498669999998"  href="#415346779060498669999998">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/FejervaryPark_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black"> <b style="font-style: italic">Davenport Zoo Design Program: Fejervary Park. McFadzean,</b> Everly and Associates, 1979.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Fejervary Park, Davenport, Iowa</a></h3>
+                            
+
+                            <p> The best that has been thought and said in the world!’ [Slowly rising, and as if the dream of years is bringing him to his feet.] That’s what that hill is for! [Pointing.] Don’t you see it? End of our trail, we climb a hill and plant a college. Plant a college, so’s after we are gone that college says for us, says in people learning has made more: ‘This is why we took this land.’
+                            </p>
+                       
+
+                            <a href="" class="btn btn-default">Glaspell, Susan <b style="font-style: italic">Inheritors.</b> Small, Maynard & Co., 1921, pp. 28-29.</a>
                          </div>
 
 
