@@ -104,6 +104,8 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.4788144, lng: -90.5858414},
       {lat: 41.534677, lng: -90.6049867},
       {lat: 41.523884, lng: -90.5758587},
+      {lat: 41.5394575, lng: -90.5326605},
+     
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -210,6 +212,12 @@ http://www.tooplate.com/view/2085-neuron
          position: new google.maps.LatLng(locations[15]),
          map: map,
          title: 'Davenport Democrat Newspaper Building'
+      });
+        // Duck Creek 
+         var marker17 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[16]),
+         map: map,
+         title: 'Duck Creek Park'
       });
 
 
@@ -720,7 +728,34 @@ http://www.tooplate.com/view/2085-neuron
       return false;
            
         });
+                     /********************************/
      
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker17.getPosition());
+          }, 3000);
+        });
+    
+          marker17.addListener('click', function() {
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker17.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      var page = tag+divElement; // Page cible
+   
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
      
 
         
@@ -1464,6 +1499,84 @@ http://www.tooplate.com/view/2085-neuron
                   </div>
           </div>
 
+         
+                <!--Duck Creek Park-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4153945759053266050000002"  href="#4153945759053266050000002">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/DuckCreekPark_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black">Dissette, H.E. 24 January 1934. Davenport Public Library, Davenport. <b style="font-style: italic">Upper Mississippi Valley Digital Image Archive. Web. 20 Jan 2019. French, George T., Illustrated Record of C.W.A. Projects, Scott County, Iowa, </b> 933-1934, Works Administration of Scott County, Iowa, pp. 55-56.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Grading along service drive, Duck Creek Park</a></h3>
+                            
+
+                            <p> “Then he started for the Duck Creek road. He had no business to be doing anything of the sort. It was the day before Thanksgiving, and he was going home to Des Champs. He ought to go and see Mrs. Shields, who wanted him to do something in town for her. This was playing off. For that—or some other reason—he was much keyed up by what he was doing. It was one of those bully days of late fall. He liked the day. He liked the world.”
+                            </p>
+                       
+
+                            <a href="" class="btn btn-default">Glaspell, Susan.  <b style="font-style: italic"> “Unveiling Brenda.” Her America: “A Jury of Her Peers” and Other Stories by Susan Glaspell,</b> edited by Patricia L. Bryan and Martha C. Carpentier, University of Iowa Press, 2010, p. 62.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+                        <!--Effie Afton-->
+
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="4153945759053266050000002"  href="#4153945759053266050000002">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/DuckCreekPark_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black">Dissette, H.E. 24 January 1934. Davenport Public Library, Davenport. <b style="font-style: italic">Upper Mississippi Valley Digital Image Archive. Web. 20 Jan 2019. French, George T., Illustrated Record of C.W.A. Projects, Scott County, Iowa, </b> 933-1934, Works Administration of Scott County, Iowa, pp. 55-56.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Effie Afton</a></h3>
+                            
+
+                            <p> “Then he started for the Duck Creek road. He had no business to be doing anything of the sort. It was the day before Thanksgiving, and he was going home to Des Champs. He ought to go and see Mrs. Shields, who wanted him to do something in town for her. This was playing off. For that—or some other reason—he was much keyed up by what he was doing. It was one of those bully days of late fall. He liked the day. He liked the world.”
+                            </p>
+                       
+
+                            <a href="" class="btn btn-default">Glaspell, Susan.  <b style="font-style: italic"> “Unveiling Brenda.” Her America: “A Jury of Her Peers” and Other Stories by Susan Glaspell,</b> edited by Patricia L. Bryan and Martha C. Carpentier, University of Iowa Press, 2010, p. 62.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
     
                           
                            
@@ -1515,7 +1628,6 @@ http://www.tooplate.com/view/2085-neuron
 
                <div class="col-md-5 col-md-offset-1 col-sm-6">
                     <h3>Augustana College</h3>
-                    <p>Some Text</p>
                     <div class="footer-copyright">
                          <p>Copyright &copy; 2019 English Department</p>
                     </div>
