@@ -103,7 +103,7 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.5624805, lng: -90.6337373},
       {lat: 41.4788144, lng: -90.5858414},
       {lat: 41.534677, lng: -90.6049867},
-        
+      {lat: 41.523884, lng: -90.5758587},
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -205,6 +205,12 @@ http://www.tooplate.com/view/2085-neuron
          map: map,
          title: 'Fejervary Park'
       });
+          //Davenport Democrat Newspaper Building
+         var marker16 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[15]),
+         map: map,
+         title: 'Davenport Democrat Newspaper Building'
+      });
 
 
         
@@ -263,7 +269,7 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('.','');
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
-      //  alert(divElement);
+        alert(divElement);
 
       var page = tag+divElement; // Page cible
      
@@ -684,6 +690,35 @@ http://www.tooplate.com/view/2085-neuron
       $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
       return false;
            
+        });              
+                /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker16.getPosition());
+          }, 3000);
+        });
+    
+          marker16.addListener('click', function() {
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker16.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+
+      var page = tag+divElement; // Page cible
+   
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
         });
      
      
@@ -763,7 +798,7 @@ http://www.tooplate.com/view/2085-neuron
                </div>
         
          <!--View of Davenport's street-->
-              <div class="col-md-offset-1 col-md-10 col-sm-12" id=""  href="#">
+              <div class="col-md-offset-1 col-md-10 col-sm-12" id="415246489057262500000002"  href="#415246489057262500000002">
                     <div class="blog-post-thumb">
                          <div class="blog-post-image">
                                 <div class="blog-post-thumb">
@@ -1390,7 +1425,44 @@ http://www.tooplate.com/view/2085-neuron
                         </div>
                   </div>
           </div>
+       <!--Davenport Democrat Newspaper Building-->
 
+            <div class="col-md-offset-1 col-md-10 col-sm-12" id="415238849057585870000003"  href="#415238849057585870000003">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/Dav_Democrat.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black">Hostetler Studio. ca 1925. Putnam Museum of History and Natural Science, Davenport. <b style="font-style: italic">Upper Mississippi Valley Digital Image Archive</b> Web. 13 Feb. 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                    
+
+                         
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Davenport Democrat Newspaper Building</a></h3>
+                            
+
+                            <p> "The press held my fascinated attention, no less than its big brother of 25 units a day. It was a flat bed machine, printing from type, and it ground out papers methodically and slowly." 
+                            </p>
+                       
+
+                            <a href="" class="btn btn-default">Hanson, Harry. Palimpsest: Vol. XXXVII No. 4, April 1956;  <b style="font-style: italic">A Davenport Boyhood.</b> XXXVII, State Historical Society of Iowa, 1956, p. 219.</a>
+                         </div>
+
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
 
     
                           
