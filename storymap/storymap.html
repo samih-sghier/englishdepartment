@@ -105,7 +105,8 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.534677, lng: -90.6049867},
       {lat: 41.523884, lng: -90.5758587},
       {lat: 41.5394575, lng: -90.5326605},
-     
+      {lat: 41.5014867, lng: -90.5099385},
+      {lat: 41.543537, lng: -90.5962163},
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -219,6 +220,22 @@ http://www.tooplate.com/view/2085-neuron
          map: map,
          title: 'Duck Creek Park'
       });
+        
+         // Moline School
+         var marker18 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[17]),
+         map: map,
+         title: 'Marjorie Allen'
+      });
+        
+        // Moline School
+         var marker19 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[18]),
+         map: map,
+         title: 'Mercy Hospital'
+      });
+        
+      
 
 
         
@@ -756,6 +773,66 @@ http://www.tooplate.com/view/2085-neuron
       return false;
            
         });
+                        /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker18.getPosition());
+          }, 3000);
+        });
+    
+          marker18.addListener('click', function() {
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker18.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      var page = tag+divElement; // Page cible
+       
+   
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                     /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker19.getPosition());
+          }, 3000);
+        });
+    
+          marker19.addListener('click', function() {
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker19.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      var page = tag+divElement; // Page cible
+       alert (page);
+   
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+       
+     
      
 
         
@@ -1571,6 +1648,89 @@ http://www.tooplate.com/view/2085-neuron
                             <a href="" class="btn btn-default">Glaspell, Susan.  <b style="font-style: italic"> “Unveiling Brenda.” Her America: “A Jury of Her Peers” and Other Stories by Susan Glaspell,</b> edited by Patricia L. Bryan and Martha C. Carpentier, University of Iowa Press, 2010, p. 62.</a>
                          </div>
 
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+         
+                  <!--Marjorie Allen-->
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12" id="4150148679050993849999998"  href="#4150148679050993849999998">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/maj.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black">Jackson, Gregory. <b style="font-style: italic">“Moline High School Through the Years.”</b> Moline Memories, 8 Feb. 2010. Web. 26 Jan. 2019. 55-56.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Marjorie Allen Seiffert’s Home: Allendale</a></h3>
+                            
+
+                            <p> I opened the door<br>
+                               And night stared at me like a fool,<br>
+                               Heavy dull night, clouded and safe--<br>
+                               I turned again toward the uncertainties<br>
+                                Of life withindoors.<br>
+                                
+                            </p>
+
+                            <p> Once night was a lion,<br>
+                               No, years ago, night was a python<br>
+                               Weaving designs against space<br>
+                                With undulations of his being--<br>
+                               Night was a siren once.<br>
+                        
+                            </p>
+                                <p>Oh sodden, middle-aged night!</p>
+                            <a href="" class="btn btn-default">Seiffert, Marjorie Allen. <b style="font-style: italic"> “Night.” A Woman of Thirty and Poems of Elijah Hay. </b> Alfred A Knope, 1919, p. 122.</a>
+                            
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+                    
+                    
+                    
+                    
+                    <!--Mercy Hospital-->
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12" id="415435379059621629999998"  href="#415435379059621629999998">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/MercyHospital_IMG_500w.jpg" class="center" alt="Blog Image">
+
+                               <cite class="center" style="color: black">Mercy Hospital. ca 1889. Mercy Hospital. ca 1889.  <b style="font-style: italic">Upper Mississippi Valley Digital Image Archive.</b> Web. 1 Dec. 2009.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Marjorie Allen Seiffert’s Home: Allendale</a></h3>
+                            
+
+                            <p>“Doctor, I want to let you know something. I telephoned Judge Parsons. He agreed to go with Dr. Sheldon to the jail and bring my son back here for examination. You could not expect me to accept your hasty action last night--ignoring the County Commission, railroading Elijah through to the asylum”</p>
+                            <a href="" class="btn btn-default">Cook, George Cram. <b style="font-style: italic">The Spring: A Play.</b> Frank Shay, 1921, p. 102.</a>
+                            
 
                </div>
                     </div>
