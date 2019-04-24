@@ -107,6 +107,9 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.5394575, lng: -90.5326605},
       {lat: 41.5014867, lng: -90.5099385},
       {lat: 41.543537, lng: -90.5962163},
+      {lat: 41.541893, lng: -90.432652},
+      {lat: 41.5189071, lng: -90.5589972},
+      {lat: 41.5179737, lng: -90.5601067},
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -233,6 +236,24 @@ http://www.tooplate.com/view/2085-neuron
          position: new google.maps.LatLng(locations[18]),
          map: map,
          title: 'Mercy Hospital'
+      });
+        // Fort Armstrong
+         var marker20 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[19]),
+         map: map,
+         title: 'Fort Armstrong'
+      });
+         // George Davenport
+         var marker21 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[20]),
+         map: map,
+         title: 'George Davenport'
+      });
+           // Government Bridge
+         var marker22 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[21]),
+         map: map,
+         title: 'Government Bridge'
       });
         
       
@@ -824,14 +845,93 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
       var page = tag+divElement; // Page cible
-       alert (page);
+    
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                     /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker20.getPosition());
+          }, 3000);
+        });
+    
+          marker20.addListener('click', function() {
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker20.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      var page = tag+divElement; // Page cible
    
       var speed = 2500; // Durée de l'animation (en ms)
       $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
       return false;
            
         });
-       
+                      /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker21.getPosition());
+          }, 3000);
+        });
+    
+          marker21.addListener('click', function() {
+         var tag ="#";
+       // alert(marker1.getPosition());
+        var divElement= marker21.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      var page = tag+divElement; // Page cible
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                        /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker22.getPosition());
+          }, 3000);
+        });
+    
+          marker22.addListener('click', function() {
+         var tag ="#";
+        var divElement= marker22.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      var page = tag+divElement; // Page cible
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
      
      
 
@@ -1695,7 +1795,7 @@ http://www.tooplate.com/view/2085-neuron
                                 <p>Oh sodden, middle-aged night!</p>
                             <a href="" class="btn btn-default">Seiffert, Marjorie Allen. <b style="font-style: italic"> “Night.” A Woman of Thirty and Poems of Elijah Hay. </b> Alfred A Knope, 1919, p. 122.</a>
                             
-
+                             </div>
                </div>
                     </div>
                         </div>
@@ -1729,7 +1829,100 @@ http://www.tooplate.com/view/2085-neuron
                             
 
                             <p>“Doctor, I want to let you know something. I telephoned Judge Parsons. He agreed to go with Dr. Sheldon to the jail and bring my son back here for examination. You could not expect me to accept your hasty action last night--ignoring the County Commission, railroading Elijah through to the asylum”</p>
-                            <a href="" class="btn btn-default">Cook, George Cram. <b style="font-style: italic">The Spring: A Play.</b> Frank Shay, 1921, p. 102.</a>
+                            <a href="" class="btn btn-default">Cook, George Cram. <b style="font-style: italic">The Spring: A Play.</b> Frank Shay, 1921, p. 102.</a></div>
+                            
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+                    
+                    
+                        <!--Fort Armstrong-->
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12" id="415418939043265200000002"  href="#415418939043265200000002">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                   <img src="images/FortArmstrong_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black">Hostetler,<b style="font-style: italic"> J.B. Rock Island Arsenal- Fort Armstrong. ca</b> 1920. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Image Archive. Web. 21 Jan. 2019. </cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" > Illustration of Fort Armstrong on Rock Island (Now known as Arsenal Island)</a></h3>
+                            
+
+                            <p>“We were friendly treated by the white chiefs, and started back to our village on Rock River. Here we found that troops had arrived to build a fort at Rock Island. This, in our opinon, was a contradiction to what we had done—“to prepare for war in time of peace.” We did not, however, object to their building their fort on the island, but we were very sorry, as this was the best island on the Mississippi, and had long been the resort of our young people during the summer. It was our garden, (like the white people have near to their big villages) which supplied us with strawberries, blackberries, gooseberries, plums, apples, and nuts of different kinds; and its waters supplied us with fine fish, being situated in the rapids of the river. In my early life, I spent many happy days on this island. A good spirit had care of it, who lived in a cave in the rocks immediately under the place where the fort now stands, and has often been seen by our people. he was white, with large wings like a swan’s, but ten times larger. We were particular not to make much noise in that part of the island which he inhabited, for fear of disturbing him. But the noise of the fort has since driven him away, and no doubt a bad spirit has taken his place!”</p>
+                            <a href="" class="btn btn-default">Black Hawk.  <b style="font-style: italic">Life of Black Hawk, or Ma-Ka-Tai-Me-She-Kia-Kiak</b> 1882. Penguin Books, 2008, p. 45.</a>
+                            
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+                    
+                    <!--George Davenport Home-->
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12" id="4151890719055899720000002"  href="#4151890719055899720000002">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                <img src="images/GeorgeDavenportHome_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black"><b style="font-style: italic"> Davenport Chamber of Commerce Photograph Collection.</b> 1930’s. Davenport Public Library, Davenport. Upper Mississippi Valley Digital Image Archive. Web. 21 Jan 2019.  </cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >George Davenport home</a></h3>                            
+                            <p>“This quiet, beautiful island out in the Mississippi—large, apart, serene—seemed a great lap into which to sink. She liked the quarters: big old-fashioned houses in front of which the long stretch of green sloped down to the river. There was something peculiarly restful in the spaciousness and stability, a place which the disagreeable or distressing things of life could not invade.”</p>
+                            <a href="" class="btn btn-default">Glaspell, Susan. <b style="font-style: italic">The Visioning.</b> Frederick A. Stokes Company, 1911, p. 3.</a></div>
+                            
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+    
+                     <!--Government Bridge-->
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12" id="415179737905601067"  href="#415179737905601067">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                <img src="images/GovernmentBridge_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black"><b style="font-style: italic">Illustration of First Government Bridge</b>  1856. Putnam Museum of History and Natural Science, Davenport, IA. Upper Mississippi Valley Digital Image Archive. Web. 13 Feb. 2019.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Government Bridge</a></h3>                            
+                            <p>“The St Louis merchants protested vehemently against the bridge, which was the first to cross the river, on the ground that it was an obstruction to navigation. They went to court on this and their case was thrown out. The building of the bridge proceeded—wooden. A point had been chosen between where the Le Clair Rapids cease, and about half a mile above the lower end of the island of Rock Island, a thing always to be distinguished from the city that bears the same name.”</p>
+                            <a href="" class="btn btn-default">Glaspell, Susan. <b style="font-style: italic">The Visioning.</b> Frederick A. Stokes Company, 1911, p. 3.</a></div>
                             
 
                </div>
@@ -1744,7 +1937,7 @@ http://www.tooplate.com/view/2085-neuron
          
          
          
-         
+
          
          
          
