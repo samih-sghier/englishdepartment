@@ -110,6 +110,8 @@ http://www.tooplate.com/view/2085-neuron
       {lat: 41.541893, lng: -90.432652},
       {lat: 41.5189071, lng: -90.5589972},
       {lat: 41.5179737, lng: -90.5601067},
+      {lat: 41.5205557, lng: -90.5777538},
+      
     ];  
       var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
@@ -254,6 +256,12 @@ http://www.tooplate.com/view/2085-neuron
          position: new google.maps.LatLng(locations[21]),
          map: map,
          title: 'Government Bridge'
+      });$
+           // LendAHand
+         var marker23 = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[22]),
+         map: map,
+         title: 'LendaHand'
       });
         
       
@@ -927,6 +935,33 @@ http://www.tooplate.com/view/2085-neuron
         divElement = divElement.replace('(','');
         divElement = divElement.replace(')','');
       var page = tag+divElement; // Page cible
+      var speed = 2500; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+           
+        });
+                           /********************************/
+     
+         map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker23.getPosition());
+          }, 3000);
+        });
+    
+          marker23.addListener('click', function() {
+         var tag ="#";
+        var divElement= marker23.getPosition()+'';      
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace(',','');
+        divElement = divElement.replace('-','');
+        divElement = divElement.replace(' ','');
+        divElement = divElement.replace('.','');
+        divElement = divElement.replace('(','');
+        divElement = divElement.replace(')','');
+      var page = tag+divElement; // Page cible
+        alert(page);
       var speed = 2500; // Durée de l'animation (en ms)
       $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
       return false;
@@ -1924,6 +1959,52 @@ http://www.tooplate.com/view/2085-neuron
                             <p>“The St Louis merchants protested vehemently against the bridge, which was the first to cross the river, on the ground that it was an obstruction to navigation. They went to court on this and their case was thrown out. The building of the bridge proceeded—wooden. A point had been chosen between where the Le Clair Rapids cease, and about half a mile above the lower end of the island of Rock Island, a thing always to be distinguished from the city that bears the same name.”</p>
                             <a href="" class="btn btn-default">Glaspell, Susan. <b style="font-style: italic">The Visioning.</b> Frederick A. Stokes Company, 1911, p. 3.</a></div>
                             
+
+               </div>
+                    </div>
+                        </div>
+                  </div>
+          </div>
+                    <!--LENDAHAND-->
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12" id=""  href="#">
+                    <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                                <div class="blog-post-thumb">
+                         <div class="blog-post-image">
+                           <a href="">
+                                <img src="images/LendAHandClub_IMG_1000w.jpg" class="center" alt="Blog Image">
+                               <cite class="center" style="color: black"><b style="font-style: italic">Lend-A-Hand Club building</b> 1925, Putnam Museum of History and Natural Science, Davenport, Iowa.</cite> 
+                              </a>
+                             
+                         </div>
+                         <div class="blog-post-title">
+                              
+                             <br>
+                         </div>
+                         <div class="blog-post-format">
+                        <div class="blog-post-des"  >
+                             <h3><a href="" style="color: #FFD604" >Lend-a-Hand (a safe place for young working women to live in when they worked away from home)</a></h3>                            
+                           
+                            <p>You sit, a snug, warm kitten<br>
+                               Blinking through the window<br>
+                               At a storm-haunted world--<br>             
+                            </p>
+
+                            <p> Silent wind caterwauls<br>
+                               Through icy trees,<br>
+                               Which clack their hands at you<br>
+                               Tauntingly<br>              
+                            </p>
+                            
+                             <p>Why should you leave<br>
+                              Radiator and rubber plant?<br>
+                              Do people stand at attention to mourn a hero<br>
+                              When they behold<br>          
+                              A frozen kitten<br>  
+                              In a gutter?<br> 
+                            </p>
+                                <a href="" class="btn btn-default">Seiffert, Marjorie Allen. “A Womanly Woman.”<b style="font-style: italic">A Woman of Thirty and Poems of Elijah Hay.</b>  Alfred A Knope, 1919, p. 120.</a></div>
 
                </div>
                     </div>
